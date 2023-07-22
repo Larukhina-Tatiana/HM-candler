@@ -6,11 +6,8 @@
   }
 
   &__link {
-    color: var(--black);
-    font-size: .875rem;
-    @extend %Comfortaa-400;
+    color: inherit;
     text-transform: uppercase;
-    line-height: normal;
   }
 
   &__phone {
@@ -18,9 +15,6 @@
     align-items: center;
     gap: 3px;
     color: var(--black);
-    font-size: .875rem;
-    @extend %Comfortaa-400;
-    text-transform: uppercase;
 
     &-svg {
       color: var(--quicksand);

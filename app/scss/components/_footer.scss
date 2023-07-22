@@ -2,4 +2,24 @@
   background: var(--white);
   padding-top: 39px;
   padding-bottom: 34px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__contacts {
+    width: 230px;
+  }
+
+  &__phone {
+    color: var(--gray1);
+    margin-bottom: 17px;
+  }
+
+  &__mail {
+    color: var(--gray1);
+    margin-bottom: 15px;
+  }
 }

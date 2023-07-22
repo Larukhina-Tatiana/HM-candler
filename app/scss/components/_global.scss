@@ -1,12 +1,13 @@
 html,
 body {
+    box-sizing: border-box;
     height: 100%;
 }
 
 *,
 *::after,
 *::before {
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 
@@ -53,11 +54,12 @@ dd {
 }
 
 body {
+    background: var(--peach);
     @extend %Comfortaa-400;
     font-size: .875rem;
-    line-height: normal;
+    line-height: calc(16/14);
     color: var(--black);
-    background: var(--peach);
+
     overflow-x: hidden;
     min-width: 300px;
 }
@@ -98,23 +100,11 @@ button,
     flex: 0 0 auto;
 }
 
-.container {
-    max-width: 1200px;
 
-    // outline: 1px solid red;
-}
+// .hr-line {
+//     border-bottom: 1px solid var(--black);
+// }
 
-.hr-line {
-    border-bottom: 1px solid var(--black);
-}
-
-
-.container-fluid {
-    max-width: 1320px;
-    padding: 30px 50px 50px;
-    margin: 0 auto;
-    outline: 1px solid #000;
-}
 
 .visually-hidden {
     position: absolute;
