@@ -1,30 +1,31 @@
-@import "./components/modern-normalize.min";
-// @import "./components/_reset";
+@import "./reset";
+// @import "./modern-normalize.min";
 @import "./components/_fonts";
 @import "./components/_global";
 @import "./components/_vars";
+@import "./components/_container";
 
 @import "./components/_header";
 @import "./components/_nav";
-@import "./components/_submenu";
-@import "./components/_social";
-@import "./components/_logo";
-@import "./components/_button";
-@import "./components/_hero";
+@import "./components/_headlines";
+// @import "./components/_submenu";
+// @import "./components/_social";
+// @import "./components/_logo";
+// @import "./components/_button";
+// @import "./components/_hero";
 
-@import "./components/_fotter";
+// @import "./components/_fotter";
 
 // @import "./components/_rightside-menu";
 
-@import "../../node_modules/slick-carousel/slick/slick.scss";
-// @import "./../../node_modules/swiper/swiper-bundle";
-@import "./components/_clients";
-@import "./components/_feature";
-@import "./components/_headlines";
-@import "./components/_portfolio";
-@import "./components/_work-proc";
-@import "./components/_slick-dots";
-@import "./components/_testimonial";
-@import "./components/_blog";
-@import "./components/_touch";
+// @import "../../node_modules/slick-carousel/slick/slick.scss";
+// // @import "./../../node_modules/swiper/swiper-bundle";
+// @import "./components/_clients";
+// @import "./components/_feature";
+// @import "./components/_portfolio";
+// @import "./components/_work-proc";
+// @import "./components/_slick-dots";
+// @import "./components/_testimonial";
+// @import "./components/_blog";
+// @import "./components/_touch";
 // @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox";

@@ -53,12 +53,11 @@ dd {
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: calc(19/16);
-    color: var(--default);
-    background: #FDFBF5;
+    @extend %Comfortaa-400;
+    font-size: .875rem;
+    line-height: normal;
+    color: var(--black);
+    background: var(--peach);
     overflow-x: hidden;
     min-width: 300px;
 }
@@ -101,10 +100,8 @@ button,
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+
     // outline: 1px solid red;
-    // background-color: coral;
 }
 
 .hr-line {

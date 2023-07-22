@@ -1,15 +1,11 @@
 :root {
-    --white: #FFFFFF;
-    --link: #444444;
-    --default: #333;
+    --koromiko: #FFBD59;
+    --quicksand: #BEA495;
+    --zorba: #A5978E;
+    --coffee:#7B6152;
+    --peach: #FFF8F3;
+    --gray: #FAFAFA;
     --black: #000;
-    --gray: #666;
-    --background: #FDFBF5;
-
-    // --title: #363838;
-    // --accent: rgba(255, 239, 53, .9);
-    // --dove-gray: #707070;
-    // --line: #979797;
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
@@ -18,10 +14,6 @@
 }
 // @include transition ($transition-property: color);
 
-// %title-font {
-//     font-family: 'Montserrat', sans-serif;
-//     font-weight: 700;
-// }
 
 @function max($numbers...) {
     @return m#{a}x(#{$numbers});
@@ -75,7 +67,7 @@ $maxWidthContainer: 1170;
 
 @mixin adaptive-value($property, $startSize, $minSize, $type) {
     $addSize: $startSize - $minSize;
- 
+
     @if $type==1 {
         // Только, если меньше контейнера
         #{$property}: $startSize + px;
@@ -92,10 +84,13 @@ $maxWidthContainer: 1170;
         @media screen and (min-width: #{$maxWidthContainer + px}) {
             #{$property}: calc(#{$minSize + px} + #{$addSize} *((100vw - 320px) / #{$maxWidthContainer - 320}));
         }
-    } @else {
+    }
+
+    @else {
         // Всегда
         #{$property}: calc(#{$minSize + px} + #{$addSize} *((100vw - 320px) / #{$maxWidthContainer - 320}));
     }
 }
+
 // @include adaptive-value(padding, 50, 20, 0);
 // padding: calc(20px + (50 - 20) * ((100vw - 300px)/ (1200 - 300)));

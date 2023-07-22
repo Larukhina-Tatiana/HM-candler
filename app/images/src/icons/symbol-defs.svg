@@ -1,0 +1,7 @@
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<symbol id="icon-nav-phone" viewBox="0 0 32 32">
+<path fill="#bea495" style="fill: var(--color1, #bea495)" d="M31 21.722l-8.783-1.016-4.2 4.197c-4.731-2.405-8.577-6.248-10.983-10.977l4.217-4.214-1.017-8.745h-9.183c-0.967 16.956 12.983 30.898 29.95 29.932v-9.178z"></path>
+</symbol>
+</defs>
+</svg>

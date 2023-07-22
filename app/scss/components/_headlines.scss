@@ -1,0 +1,13 @@
+// h1 30px
+.title-h1 {
+  color: var(--black);
+  @extend %YesevaOne-400;
+  font-size: 1.875rem;
+}
+
+// h2 40px
+.title-h2 {
+  font-size: 2.5rem;
+  color: var(--gray);
+  @extend %YesevaOne-400;
+}

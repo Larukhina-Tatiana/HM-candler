@@ -35,23 +35,27 @@ function fonts() {
     .pipe(dest("app/fonts"));
 }
 
-function includeh() {
-  return src( "app/pages/*.html")
-    .pipe(
-      include({
-        includePaths: "app/components/html"
-      })
-    )
-    .pipe(dest("app"));
-}
+// function includeh() {
+//   return src( "app/*.html")
+//     .pipe(
+//       include({
+//         includePaths: "app/html"
+//       })
+//     )
+//     .pipe(dest("app"));
+// }
 
 
 function styles() {
+  // return src("app/scss/style.scss")
   return src("app/scss/style.scss")
     .pipe(concat("style.min.css"))
     .pipe(scss({ outputStyle: "compressed" }))
     .pipe(dest("app/css"))
-    .pipe(autoprefixer({ overrideBrowsersList: ["last 10 version"] }));
+    .pipe(autoprefixer({
+      overrideBrowsersList: ["last 10 version"],
+      grid: true
+  }));
 }
 
 function scripts() {
@@ -128,14 +132,14 @@ function building() {
 
 // слешение за обновлениями файлов
 function watching() {
-  watch(["app/components/html/*", "app/pages/*"], includeh);
-  watch(["app/scss/style.scss"], styles);
+  // watch(["app/*.html"], includeh);
+  watch(["app/scss/*.scss", "app/scss/components/*.scss"], styles);
   watch(["app/images/**/*.*"], images);
   watch(["app/js/main.js"], scripts);
 }
 
 exports.fonts = fonts;
-exports.includeh = includeh;
+// exports.includeh = includeh;
 exports.styles = styles;
 exports.scripts = scripts;
 exports.images = images;
@@ -145,4 +149,4 @@ exports.watching = watching;
 
 exports.build = series(cleanDist, building);
 
-exports.default = parallel(styles, images, scripts, includeh, watching);
+exports.default = parallel(styles, images, scripts, watching);

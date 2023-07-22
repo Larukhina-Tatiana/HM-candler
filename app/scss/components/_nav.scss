@@ -1,0 +1,29 @@
+.nav {
+
+  &__list {
+    display: flex;
+    gap: 0 20px;
+  }
+
+  &__link {
+    color: var(--black);
+    font-size: .875rem;
+    @extend %Comfortaa-400;
+    text-transform: uppercase;
+    line-height: normal;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    color: var(--black);
+    font-size: .875rem;
+    @extend %Comfortaa-400;
+    text-transform: uppercase;
+
+    &-svg {
+      color: var(--quicksand);
+    }
+  }
+}
