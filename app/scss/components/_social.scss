@@ -1,0 +1,27 @@
+.social {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+
+  &__item {
+    width: 22px;
+    height: 22px;
+
+  }
+
+  &__link-svg {
+    // height: calc(30px + (40 - 30) * ((100vw - 300px)/ 900));
+    @include transition ($transition-property: fill);
+  }
+
+  &__link:hover &__link-svg,
+  &__link:focus &__link-svg {
+    padding: 2px;
+    width: 20px;
+    height: 18px;
+    fill: var(--white);
+    background-color: var(--coffee);
+    border-radius: 50%;
+  }
+
+}

@@ -6,6 +6,7 @@
     --peach: #FFF8F3;
     --gray: #FAFAFA;
     --black: #000;
+    --white: #FFFFFF;
 }
 
 @mixin transition ($transition-property: color, $transition-duration: 550ms, $transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)) {
