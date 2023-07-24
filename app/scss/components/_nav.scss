@@ -1,4 +1,11 @@
 .nav {
+  &__burger-btn {
+    display: none;
+  }
+
+  &__burger-btn-svg {
+    color: var(--coffee);
+  }
 
   &__list {
     display: flex;
@@ -8,6 +15,11 @@
   &__link {
     color: inherit;
     text-transform: uppercase;
+    font-size: inherit;
+
+    // @media screen and (width > 480px) and (width < 769px) {
+
+    // }
   }
 
   &__phone {
@@ -16,8 +28,70 @@
     gap: 3px;
     color: var(--black);
 
+    @media screen and (min-width: 480px) and (max-width: 768px) {}
+
     &-svg {
       color: var(--quicksand);
     }
   }
+
+  @media screen and (width < 769px) {
+
+
+    &__link,
+    &__phone {
+      font-size: .625rem;
+      line-height: 1.5;
+    }
+
+    &__phone {
+      gap: 1px;
+    }
+
+    &__phone-svg {
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  @media screen and (width < 619px) {
+    .header & {
+      order: 1;
+    }
+
+    &__burger-btn {
+      display: flex;
+    }
+
+    .header &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 153px;
+      position: absolute;
+      padding: 25px 34px 43px 46px;
+      color: var(--peach);
+      background-color: var(--coffee);
+      top: 12%;
+      right: 0%;
+      transform: translateY(-129%);
+      @include transition ($transition-property: transform);
+    }
+
+    .header &__list.menu--open {
+      transform: translateY(0%);
+
+
+    }
+  }
+
+  @media screen and (width < 510px) {
+    .footer &__list {
+      flex-direction: column;
+      gap: 22px;
+      text-align: center;
+    }
+  }
+
+
 }

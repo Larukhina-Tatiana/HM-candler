@@ -1,3 +1,3 @@
-const box = document.querySelector('.box');
-const btn = document.querySelector('.button');
-const menu = document.querySelector('.menu');
+$(".nav__burger-btn").on("click", function () {
+  $(".nav__list").toggleClass("menu--open");
+});

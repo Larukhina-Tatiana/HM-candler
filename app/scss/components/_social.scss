@@ -6,22 +6,29 @@
   &__item {
     width: 22px;
     height: 22px;
-
   }
 
   &__link-svg {
-    // height: calc(30px + (40 - 30) * ((100vw - 300px)/ 900));
     @include transition ($transition-property: fill);
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &__link:hover &__link-svg,
   &__link:focus &__link-svg {
     padding: 2px;
-    width: 20px;
-    height: 18px;
+    width: 24px;
+    height: 22px;
     fill: var(--white);
     background-color: var(--coffee);
     border-radius: 50%;
   }
 
+  @media screen and (width < 901px) {
+    justify-content: center;
+    column-gap: 8px;
+  }
 }

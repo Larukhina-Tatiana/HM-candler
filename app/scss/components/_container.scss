@@ -1,15 +1,18 @@
 .container {
   margin: 0 auto;
   padding: 0 10px;
-  // width: 100%;
+  max-width: 1180px;
 
-  &--1160 {
-    max-width: 1180px;
+
+  @media screen and (max-width : 1000px ) {
+    padding: 0 20px;
   }
-  &--1300 {
-    max-width: 1320px;
+
+  @media screen and (width < 769px ) {
+    max-width: 640px;
   }
-  &--1440 {
-    max-width: 1460px;
+
+  @media screen and (width < 481px ) {
+    padding: 0 10px;
   }
 }
