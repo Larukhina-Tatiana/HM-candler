@@ -74,6 +74,7 @@
       background-color: var(--coffee);
       top: 12%;
       right: 0%;
+      z-index: 2;
       transform: translateY(-129%);
       @include transition ($transition-property: transform);
     }

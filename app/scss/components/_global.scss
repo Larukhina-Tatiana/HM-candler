@@ -94,9 +94,10 @@ button,
 //     min-height: 100%;
 // }
 
-// .main {
+.main {
+    overflow-x: clip;
 //     flex: 1 0 auto;
-// }
+}
 
 // .footer {
 //     flex: 0 0 auto;

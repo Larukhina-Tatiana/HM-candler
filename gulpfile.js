@@ -76,8 +76,8 @@ function images() {
   // return src(["app/images/**/*.*", "!app/images/**/*.svg"])
   return (
     src(["app/images/src/*.*", "!app/images/src/*.svg"])
-      .pipe(newer("app/images"))
-      .pipe(avif({ quality: 50 }))
+      // .pipe(newer("app/images"))
+      // .pipe(avif({ quality: 50 }))
 
       // .pipe(src("app/images/**/*.*"))
       .pipe(src("app/images/src/*.*"))

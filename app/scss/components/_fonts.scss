@@ -8,24 +8,13 @@
 
 // 400
 @font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto-Regular.woff2) format('woff2'), url(../fonts/Roboto-Regular.woff) format('woff');
-    font-weight: 400;
-    font-style: normal;
-}
-%Roboto-400 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
-
-@font-face {
     font-family: 'Comfortaa';
     src: url(../fonts/Comfortaa-Regular.woff2) format('woff2'), url(../fonts/Comfortaa-Regular.woff) format('woff');
     font-weight: 400;
     font-style: normal;
 }
 %Comfortaa-400 {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-weight: 400;
 }
 
@@ -36,7 +25,7 @@
     font-style: normal;
 }
 %YesevaOne-400 {
-    font-family: 'YesevaOne', sans-serif;
+    font-family: 'YesevaOne', cursive;
     font-weight: 400;
 }
 
@@ -52,24 +41,6 @@
 //     font-family: 'Syne', sans-serif;
 //     font-weight: 500;
 // }
-// @font-face {
-//     font-family: 'Plus Jakarta Sans';
-//     src: url(../fonts/PlusJakartaSans-MediumItalic.woff2) format('woff2'), url(../fonts/PlusJakartaSans-MediumItalic.woff) format('woff');
-//     font-weight: 500;
-//     font-style: italic;
-// }
-// @font-face {
-//     font-family: 'Plus Jakarta Sans';
-//     src: url(../fonts/PlusJakartaSans-Medium.woff2) format('woff2'), url(../fonts/PlusJakartaSans-Medium.woff) format('woff');
-//     font-weight: 500;
-//     font-style: normal;
-// }
-// @font-face {
-//     font-family: 'Cabin';
-//     src: url(../fonts/Cabin-Medium.woff2) format('woff2'), url(../fonts/Cabin-Medium.woff) format('woff');
-//     font-weight: 500;
-//     font-style: normal;
-// }
 
 
 // 600
@@ -80,7 +51,7 @@
     font-style: normal;
 }
 %Comfortaa-600 {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-weight: 600;
 }
 // 700
@@ -91,7 +62,7 @@
     font-style: normal;
 }
 %Comfortaa-700 {
-    font-family: 'Comfortaa', sans-serif;
+    font-family: 'Comfortaa', cursive;
     font-weight: 700;
 }
 

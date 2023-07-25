@@ -1,4 +1,90 @@
 .hero {
-  background: var(--peach);
-  padding-bottom: 420px;
+  padding: 40px 0 150px;
+
+  &__inner {
+    position: relative;
+  }
+
+  &__content {
+    width: 370px;
+    padding: 150px 0 250px;
+  }
+
+  &__text {
+    margin: 15px 0 48px;
+  }
+
+  &__bg {
+    top: 0;
+    left: 240px;
+    position: absolute;
+    overflow: hidden;
+  }
+
+  @media screen and (width < 1001px) {
+    &__content {
+      width: 333px;
+      padding: 95px 0 70px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+
+    &__bg {
+      left: 300px;
+      width: 655px;
+    }
+  }
+
+  // @media screen and (width < 807px) {
+  //   &__content {
+  //     width: 333px;
+  //     padding: 95px 0 70px;
+  //   }
+
+  //   &__bg {
+  //     left: 300px;
+  //   }
+  //   &__bg img {
+  //     width: 655px;
+  //   }
+  // }
+
+  @media screen and (width < 769px) {
+    &__content {
+      width: 230px;
+      padding: 95px 0 70px;
+    }
+
+    &__text {
+      margin: 20px 0;
+      font-size: .625rem;
+    }
+
+    &__bg {
+      left: 180px;
+      width: 525px;
+    }
+  }
+
+  @media screen and (width < 481px) {
+    padding: 30px 0 50px;
+
+    &__content {
+      width: 179px;
+      padding: 80px 0 80px;
+    }
+
+    &__text {
+      margin: 15px 0;
+      font-size: .5rem;
+    }
+
+    &__bg {
+      left: 167px;
+      width: 309px;
+    }
+  }
+
 }

@@ -1,0 +1,27 @@
+.button {
+  display: inline-block;
+  background-color: var(--koromiko);
+  color: #272727;
+  @extend %Comfortaa-600;
+  font-size: .875rem;
+  text-align: center;
+
+  &--hero {
+    // width: 150px;
+    // height: 55px;
+    padding: 18px 54px;
+
+    @media screen and (width < 769px) {
+      // width: 120px;
+      // height: 45px;
+      // padding: 5px 5px;
+    }
+  }
+
+  @media screen and (width < 481px) {
+    // width: 91px;
+    // height: 34px;
+    padding: 14px 41px;
+    font-size: .6875rem;
+  }
+}

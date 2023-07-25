@@ -3,6 +3,13 @@
   color: var(--black);
   @extend %YesevaOne-400;
   font-size: 1.875rem;
+  
+  @media screen and (width < 769px) {
+    font-size: 1.25rem;
+  }
+  @media screen and (width < 481px) {
+    font-size: .9375rem;
+  }
 }
 
 // h2 40px
