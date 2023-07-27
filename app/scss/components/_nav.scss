@@ -16,10 +16,10 @@
     color: inherit;
     text-transform: uppercase;
     font-size: inherit;
-
-    // @media screen and (width > 480px) and (width < 769px) {
-
-    // }
+    @include transition ($transition-property:color);
+    &:hover {
+      color: var(--coffee);
+    }
   }
 
   &__phone {
@@ -77,6 +77,13 @@
       z-index: 2;
       transform: translateY(-159%);
       @include transition ($transition-property: transform);
+    }
+
+    .header &__link{
+      @include transition ($transition-property:color);
+      &:hover {
+        color: var(--black);
+      }
     }
 
     .header &__list.menu--open {

@@ -33,23 +33,12 @@
 
     &__bg {
       left: 300px;
-      width: 655px;
+
+      & img {
+        width: 655px;
+      }
     }
   }
-
-  // @media screen and (width < 807px) {
-  //   &__content {
-  //     width: 333px;
-  //     padding: 95px 0 70px;
-  //   }
-
-  //   &__bg {
-  //     left: 300px;
-  //   }
-  //   &__bg img {
-  //     width: 655px;
-  //   }
-  // }
 
   @media screen and (width < 769px) {
     &__content {
@@ -64,7 +53,10 @@
 
     &__bg {
       left: 180px;
-      width: 525px;
+
+      & img {
+        width: 525px;
+      }
     }
   }
 
@@ -83,7 +75,10 @@
 
     &__bg {
       left: 167px;
-      // width: 309px;
+    }
+
+    &__bg img {
+      width: 309px;
     }
   }
 
@@ -101,10 +96,9 @@
     &__bg {
       left: 200px;
     }
-    
+
     &__bg img {
       width: 162px;
-
     }
   }
 

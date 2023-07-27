@@ -5,6 +5,11 @@
   @extend %Comfortaa-600;
   font-size: .875rem;
   text-align: center;
+  @include transition ($transition-property:(background-color, color));
+  &:hover {
+    background-color: var(--coffee);
+    color: var(--white);
+  }
 
   &--hero {
     // width: 150px;
