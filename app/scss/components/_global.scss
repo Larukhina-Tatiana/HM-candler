@@ -61,9 +61,17 @@ body {
     color: var(--black);
     overflow-x: hidden;
     min-width: 300px;
+
     // @media screen and (width < 1000px ) {
     //     font-size: .625rem;
     // }
+    @media screen and (width < 769px) {
+        line-height: calc(15/10);
+    }
+
+    @media screen and (width < 361px) {
+        line-height: calc(11/10);
+    }
 }
 
 button {
@@ -96,7 +104,7 @@ button,
 
 .main {
     overflow-x: clip;
-//     flex: 1 0 auto;
+    //     flex: 1 0 auto;
 }
 
 // .footer {

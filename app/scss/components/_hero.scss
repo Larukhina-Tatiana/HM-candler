@@ -55,7 +55,7 @@
       left: 180px;
 
       & img {
-        width: 525px;
+        min-width: 525px;
       }
     }
   }
@@ -78,7 +78,7 @@
     }
 
     &__bg img {
-      width: 309px;
+      min-width: 309px;
     }
   }
 
@@ -89,8 +89,13 @@
       padding: 20px 0 0;
     }
 
+    & .title-h2 {
+      margin-bottom: 10px;
+    }
+
     &__text {
       font-size: .625rem;
+      line-height: calc(11/10);
     }
 
     &__bg {
@@ -98,7 +103,7 @@
     }
 
     &__bg img {
-      width: 162px;
+      min-width: 162px;
     }
   }
 

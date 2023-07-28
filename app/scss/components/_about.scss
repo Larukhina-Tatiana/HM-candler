@@ -11,7 +11,6 @@
 
   &__content {
     min-width: 370px;
-    // padding-top: 128px;
   }
 
   & .title-h2 {
@@ -42,7 +41,7 @@
 
     &::after {
       position: absolute;
-      content:'';
+      content: '';
       background-color: var(--coffee);
       width: 100%;
       height: 1px;
@@ -51,12 +50,135 @@
     }
   }
 
-
   &__item-img {
     margin-bottom: 10px;
   }
 
   &__item-text {
     font-size: .6875rem;
+  }
+
+  @media screen and (width < 1001px) {
+
+    &__content {
+      min-width: 300px;
+    }
+
+    &__list {
+      padding-left: 20px;
+    }
+  }
+
+  @media screen and (width < 769px) {
+
+    &__content {
+      min-width: 200px;
+    }
+
+    & .title-h2 {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      font-size: .625rem;
+    }
+
+    &__list {
+      margin-left: 28px;
+      padding-bottom: 33px;
+      gap: 0 10px;
+
+      &::before {
+        left: -12px;
+        bottom: -13px;
+      }
+
+      &::after {
+        left: 10px;
+        bottom: 0;
+      }
+    }
+
+    &__item-img {
+      margin-bottom: 6px;
+
+      &--1,
+      &--3 {
+        width: 121px;
+      }
+
+      &--2 {
+        width: 191px;
+      }
+    }
+
+    &__item-text {
+      font-size: .375rem;
+    }
+  }
+
+  @media screen and (width < 481px) {
+
+    &__content {
+      min-width: 172px;
+    }
+
+    &__list {
+      align-items: flex-end;
+      margin-left: 17px;
+      padding-left: 0;
+      padding-bottom: 50px;
+      gap: 0 5px;
+    }
+
+    &__item-img{
+      margin-bottom: 0;
+    }
+
+    &__item-text {
+      display: none;
+    }
+
+    &__item-img {
+      &--1,
+      &--3 {
+        width: 80px;
+      }
+
+      &--2 {
+        width: 140px;
+      }
+    }
+  }
+
+  @media screen and (width < 361px) {
+    padding: 25px 0 30px;
+
+    &__content {
+      min-width: 234px;
+    }
+
+    & .title-h2 {
+      margin-bottom: 10px;
+    }
+    &__text {
+      font-size: .5rem;
+      line-height: calc(9/8);
+    }
+
+    &__list {
+      align-items: flex-end;
+      margin-left: 12px;
+      padding-left: 12px;
+      padding-bottom: 30px;
+      
+      gap: 0 5px;
+    }
+
+    &__item-img--2,
+    &__item-img--3 {
+      display: none;
+    }
+
   }
 }
