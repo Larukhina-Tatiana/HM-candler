@@ -27,14 +27,21 @@
       width: 1000%;
       height: 1px;
       left: 22px;
-      bottom: 11px;
+      bottom: 13px;
     }
   }
 
   @media screen and (width < 1001px) {
     &__content {
       min-width: 300px;
+      width: 100%;
     }
+
+    
+  &__inner {
+    display: flex;
+    gap: 0;
+  }
   }
 
   @media screen and (width < 769px) {
