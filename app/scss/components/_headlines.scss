@@ -4,6 +4,7 @@
   @extend %YesevaOne-400;
   font-size: 1.875rem;
   line-height: calc(35/30);
+  margin-bottom: 15px;
 
   @media screen and (width < 769px) {
     font-size: 1.25rem;
@@ -26,10 +27,18 @@
   font-size: 2.5rem;
   color: var(--gray);
   @extend %YesevaOne-400;
+  margin-bottom: 15px;
 
   @media screen and (width < 769px) {
     font-size: .9675rem;
     line-height: calc(17/15);
   }
-
 }
+
+  .title-h3 {
+    font-size: 1rem;
+    line-height: calc(18/16);
+    color: var(--black);
+    @extend %YesevaOne-400;
+  }
+

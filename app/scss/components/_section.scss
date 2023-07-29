@@ -1,0 +1,49 @@
+.section {
+
+  &__inner {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__content {
+    min-width: 370px;
+  }
+
+  &__list{
+    position: relative;
+    &::before {
+      position: absolute;
+      content: url(../images/section-decor.png);
+      width: 22px;
+      height: 30px;
+      left: 0;
+      bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-color: var(--coffee);
+      width: 1000%;
+      height: 1px;
+      left: 22px;
+      bottom: 11px;
+    }
+  }
+
+  @media screen and (width < 1001px) {
+    &__content {
+      min-width: 300px;
+    }
+  }
+
+  @media screen and (width < 769px) {
+    &__content {
+      width: 230px;
+    }
+  }
+
+  @media screen and (width < 481px) {}
+
+
+}

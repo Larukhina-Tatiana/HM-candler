@@ -15,13 +15,18 @@
     // width: 150px;
     // height: 55px;
     padding: 18px 54px;
+  }
+
+  &--products {
+    padding: 18px 54px;
+  }
 
     @media screen and (width < 769px) {
       // width: 120px;
       // height: 45px;
       // padding: 5px 5px;
     }
-  }
+
 
   @media screen and (width < 481px) {
     // width: 91px;

@@ -68,6 +68,9 @@ body {
     @media screen and (width < 769px) {
         line-height: calc(15/10);
     }
+    @media screen and (width < 481px) {
+        line-height: calc(11/10);
+    }
 
     @media screen and (width < 361px) {
         line-height: calc(11/10);

@@ -11,7 +11,7 @@
   }
 
   &__text {
-    margin: 15px 0 48px;
+    margin-bottom: 48px;
   }
 
   &__bg {
@@ -19,6 +19,10 @@
     left: 240px;
     position: absolute;
     overflow: hidden;
+
+    & img {
+      min-width: 1069px;
+    }
   }
 
   @media screen and (width < 1001px) {
@@ -32,10 +36,10 @@
     }
 
     &__bg {
-      left: 300px;
+      left: 320px;
 
       & img {
-        width: 655px;
+        min-width: 701px;
       }
     }
   }
@@ -49,6 +53,7 @@
     &__text {
       margin: 20px 0;
       font-size: .625rem;
+      line-height: calc(15/10);
     }
 
     &__bg {
@@ -71,10 +76,11 @@
     &__text {
       margin: 15px 0;
       font-size: .5rem;
+      line-height: calc(12/8);
     }
 
     &__bg {
-      left: 167px;
+      left: 180px;
     }
 
     &__bg img {
@@ -99,7 +105,7 @@
     }
 
     &__bg {
-      left: 200px;
+      left: 210px;
     }
 
     &__bg img {
