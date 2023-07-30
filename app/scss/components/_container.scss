@@ -9,10 +9,11 @@
   }
 
   @media screen and (width < 769px ) {
-    max-width: 640px;
+    padding: 0 10px;
+    max-width: 660px;
   }
 
-  @media screen and (width < 481px ) {
-    padding: 0 10px;
-  }
+  // @media screen and (width < 481px ) {
+  //   padding: 0 10px;
+  // }
 }

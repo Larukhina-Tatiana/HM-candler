@@ -5,7 +5,8 @@
   @extend %Comfortaa-600;
   font-size: .875rem;
   text-align: center;
-  @include transition ($transition-property:(background-color, color));
+  @include transition ($transition-property: (background-color, color));
+
   &:hover {
     background-color: var(--coffee);
     color: var(--white);
@@ -21,17 +22,35 @@
     padding: 18px 54px;
   }
 
-    @media screen and (width < 769px) {
-      // width: 120px;
-      // height: 45px;
-      // padding: 5px 5px;
+  @media screen and (width < 769px) {
+
+    &--products {
+      width: 103px;
+      height: 36px;
+      padding: 5px;
+      font-size: .75rem;
+      line-height: calc(13/12);
     }
+  }
 
 
   @media screen and (width < 481px) {
-    // width: 91px;
-    // height: 34px;
-    padding: 14px 41px;
-    font-size: .6875rem;
+
+    &__hero {
+      // width: 91px;
+      // height: 34px;
+      padding: 14px 41px;
+      font-size: .6875rem;
+    }
+  }
+
+  @media screen and (width < 361px) {
+
+    &--products {
+      width: 78px;
+      height: 30px;
+      font-size: .5rem;
+      line-height: calc(9/8);
+    }
   }
 }

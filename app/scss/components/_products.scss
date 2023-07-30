@@ -10,15 +10,20 @@
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    gap: 50px 93px;
+    justify-content: space-between;
+    row-gap: 50px;
+    // gap: 50px 93px;
     padding-left: 49px;
     padding-bottom: 70px;
   }
 
   &__item {
     flex-basis: 290px;
-
+    overflow: hidden;
+    
     &-img {
+      object-fit: cover;
+      box-sizing: content-box;
       padding: 0 8px;
       margin-bottom: 8px;
     }
@@ -41,6 +46,13 @@
   }
 
 
+
+  @media screen and (width < 1039px) {
+    &__list {
+      padding-left: 10px;
+    }
+  }
+
   @media screen and (width < 1001px) {
 
     &__text {
@@ -49,17 +61,124 @@
     }
 
     &__list {
-      gap: 56px;
       padding-left: 24px;
-      padding-bottom: 63px;
+      padding-right: 5px;
     }
-
 
     &__item {
-      // &-text {
-      //   font-size: .75rem;
-      //   line-height: calc(13/12);
-      // }
+      // flex-basis: 290px;
+      flex-basis: calc((100% - 10px) / 2);
+
+      &-img {
+        width: 274px;
+        padding: 0 8px;
+        margin-bottom: 6px;
+      }
+
+      &-text {
+        min-height: 52px;
+      }
     }
   }
+
+  @media screen and (width < 769px) {
+
+    &__text {
+      font-size: .625rem;
+      line-height: calc(11/10);
+    }
+
+    &__list {
+      gap: 30px 16px;
+      padding-left: 30px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 16px) /2);
+
+      &-img {
+        // width: 189px;
+        padding: 0 5px;
+        margin-bottom: 6px;
+      }
+
+      & .title-h3 {
+        margin-bottom: 9px;
+        font-size: .75rem;
+
+        & span {
+          margin-bottom: 7px;
+        }
+      }
+
+      &-text {
+
+        font-size: .5rem;
+        line-height: calc(9/8);
+        margin-bottom: 19px;
+      }
+    }
+  }
+
+  @media screen and (width < 522px) {
+    margin-bottom: 60px;
+
+    &__list {
+      padding-left: 24px;
+      padding-right: 20px;
+    }
+
+    &__item {
+      &-text {
+        min-height: 27px;
+      }
+    }
+  }
+
+  @media screen and (width < 406px) {
+
+    &__item {
+      &-text {
+        min-height: 52px;
+      }
+    }
+  }
+
+  @media screen and (width < 361px) {
+
+    &__text {
+      font-size: 0.5rem;
+      line-height: calc(9/8);
+    }
+
+    &__list {
+      gap: 40px 7px;
+      padding-left: 17px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 7px) /2);
+
+      &-img {
+        padding: 0 3.5px;
+        margin-bottom: 5px;
+      }
+
+      & .title-h3 {
+        margin-bottom: 7px;
+        font-size: .625rem;
+
+        & span {
+          margin-bottom: 5px;
+        }
+      }
+
+        &-text {
+          font-size: .375rem;
+          line-height: calc(7/6);
+          margin-bottom: 17px;
+          min-height: 27px;
+        }
+      }
+    }
   }

@@ -119,6 +119,10 @@
     }
   }
 
+  @media screen and (width < 522px) {
+    margin-bottom: 50px;
+  }
+
   @media screen and (width < 481px) {
 
     &__content {

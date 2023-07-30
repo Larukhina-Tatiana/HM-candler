@@ -30,8 +30,12 @@
   margin-bottom: 15px;
 
   @media screen and (width < 769px) {
-    font-size: .9675rem;
+    font-size: .9375rem;
     line-height: calc(17/15);
+  }
+
+  @media screen and (width < 361px) {
+    margin-bottom: 10px;
   }
 }
 
