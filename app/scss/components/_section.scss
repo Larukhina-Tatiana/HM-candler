@@ -12,6 +12,8 @@
 
   &__list{
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     &::before {
       position: absolute;
       content: url(../images/section-decor.png);
@@ -34,8 +36,8 @@
 
   @media screen and (width < 1001px) {
     &__content {
-      min-width: 300px;
-      width: 300px;
+      max-width: 300px;
+      // width: 300px;
     }
 
     
@@ -47,7 +49,7 @@
 
   @media screen and (width < 769px) {
     &__content {
-      min-width: 200px;
+      max-width: 200px;
       margin-bottom: 15px;
     }
   }
