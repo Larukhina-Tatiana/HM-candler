@@ -36,7 +36,7 @@
 
   @media screen and (width < 1001px) {
     &__content {
-      max-width: 300px;
+      min-width: 300px;
       // width: 300px;
     }
 
@@ -47,10 +47,17 @@
   }
   }
 
+
+
   @media screen and (width < 769px) {
     &__content {
-      max-width: 200px;
+      min-width: 200px;
       margin-bottom: 15px;
+    }
+
+    &__text {
+      font-size: .625rem;
+      line-height: calc(11/10);
     }
   }
 

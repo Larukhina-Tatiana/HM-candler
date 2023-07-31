@@ -1,4 +1,5 @@
 .creation {
+  margin-bottom: 150px;
 
   & .title-h2 {
     color: var(--black);
@@ -17,8 +18,9 @@
 
     &-text {
       width: 174px;
-      height: 135px;
-      margin-bottom: 85px;
+      height: 183px;
+      // min-height: 183px;
+      margin-bottom: 6px;
     }
 
     & picture {
@@ -39,6 +41,118 @@
 
   &__wrapp--order {
     order: -1;
+  }
+
+  @media screen and (max-width : 1001px) {
+
+    &__list {
+      gap: 34px 24px;
+      padding-left: 25px;
+    }
+
+    &__item {
+      gap: 31px;
+
+      &-img {
+        width: 129px;
+        height: 226px;
+      }
+
+      &-text {
+        width: 141px;
+        height: 187px;
+      }
+    }
+  }
+
+  @media screen and (max-width : 909px) {
+
+    & .title-h2 {
+      font-size: .9375rem;
+      line-height: calc(17/15);
+    }
+
+    &__content {
+      min-width: 200px;
+    }
+
+    &__item {
+      gap: 10px;
+    }
+  }
+
+  @media screen and (width < 769px) {
+    &__list {
+      padding-left: 4px;
+    }
+
+    &__item {
+      gap: 20px;
+      flex-basis: calc((100% - 35px) / 2);
+
+      &-img {
+        width: 86px;
+        height: 150px;
+      }
+
+      &-text {
+        font-size: .5rem;
+        line-height: calc(9/8);
+        width: 92px;
+        height: 125px;
+      }
+
+      &-num {
+        font-size: 1.25rem;
+        line-height: calc(23/20);
+      }
+    }
+  }
+
+  @media screen and (width < 522px) {
+    margin-bottom: 60px;
+    &__list {
+      padding-left: 10px;
+      padding-bottom: 69px;
+      gap: 25px 35px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 40px) / 2);
+
+      &-text {
+        margin-bottom: 4px;
+      }
+    }
+  }
+
+  @media screen and (width < 381px) {
+
+    &__list {
+      gap: 20px 25px;
+    }
+
+    &__item {
+      gap: 16px;
+      flex-basis: calc((100% - 25px) / 2);
+
+      &-img {
+        width: 66px;
+        height: 100px;
+      }
+
+      &-text {
+        font-size: .375rem;
+        line-height: calc(7/6);
+        width: 72px;
+        height: 83px;
+      }
+
+      &-num {
+        font-size: .75rem;
+        line-height: calc(14/12);
+      }
+    }
   }
 
 }
