@@ -1,0 +1,71 @@
+.courses {
+
+  &__list {
+    padding-left: 20px;
+
+    justify-content: space-between;
+    text-align: center;
+  }
+
+  &__item {
+    margin-right: 53px;
+    margin-left: 53px;
+    flex-basis: 269px;
+    position: relative;
+
+    &-img {
+      margin-bottom: 28px;
+    }
+
+    &-name,
+    &-clock,
+    &-price {
+      position: absolute;
+      background: #BEA495;
+      color: var(--white);
+      @extend %YesevaOne-400;
+      font-size: .6875rem;
+      line-height: calc(13/11);
+      text-align: center;
+    }
+
+    &-name {
+      padding: 15px 15px 15px 10px;
+      width: 191px;
+      height: 43px;
+      left: 0px;
+      top: 166px;
+    }
+
+    &-clock {
+      padding: 7px 7px 7px 10px;
+      width: 129px;
+      height: 27px;
+      left: 0px;
+      top: 224px;
+
+      & span {
+        color: #FFF;
+        @extend %Comfortaa-400;
+        font-size: .625rem;
+        line-height: calc(11/10);
+      }
+    }
+
+    &-price {
+      padding: 19px 12px 19px 10px;
+      width: 86px;
+      height: 50px;
+      left: 196px;
+      top: 320px;
+    }
+
+    &-text {
+      margin-top: 15px;
+      margin-bottom: 24px;
+    }
+
+  }
+
+
+}
