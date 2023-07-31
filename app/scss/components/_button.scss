@@ -31,7 +31,8 @@
 
   @media screen and (width < 769px) {
 
-    &--products {
+    &--products,
+    &--courses {
       width: 103px;
       height: 36px;
       padding: 5px;
