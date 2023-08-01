@@ -1,6 +1,7 @@
 .social {
   display: flex;
   align-items: center;
+  justify-content: center;
   column-gap: 15px;
 
   &__item {
@@ -20,15 +21,15 @@
   &__link:hover &__link-svg,
   &__link:focus &__link-svg {
     padding: 2px;
-    width: 24px;
-    height: 22px;
+    width: 25px;
+    height: 25px;
     fill: var(--white);
     background-color: var(--coffee);
     border-radius: 50%;
   }
 
-  @media screen and (width < 901px) {
-    justify-content: center;
-    column-gap: 8px;
-  }
+  // @media screen and (width < 901px) {
+  //   justify-content: center;
+  //   column-gap: 8px;
+  // }
 }

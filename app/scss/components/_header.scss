@@ -1,15 +1,11 @@
 .header {
   padding-top: 4px;
+  margin-bottom: 30px;
 
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-
-  @media screen and (width < 619px ) {
-    & .nav__list {
-      display: none;
-    }
+    position: relative;
   }
 }

@@ -1,22 +1,30 @@
 .nav {
-  &__burger-btn {
-    display: none;
-  }
 
-  &__burger-btn-svg {
-    color: var(--coffee);
+  .header & {
+    order: 1;
   }
 
   &__list {
-    display: flex;
-    gap: 0 20px;
+    display: none;
+    gap: 20px;
+    color: var(--black);
+    background: var(--peach);
+    /* текст 10 адап */
+    font-size: .625rem;
+    line-height: 1.5;
+    text-transform: uppercase;
+  }
+
+  &__link,
+  &__phone {
+    font-size: .625rem;
+    line-height: 1.5;
   }
 
   &__link {
     color: inherit;
-    text-transform: uppercase;
-    font-size: inherit;
-    @include transition ($transition-property:color);
+    @include transition ($transition-property: color);
+
     &:hover {
       color: var(--coffee);
     }
@@ -25,81 +33,99 @@
   &__phone {
     display: flex;
     align-items: center;
-    gap: 3px;
+    gap: 2px;
     color: var(--black);
-
-    @media screen and (min-width: 480px) and (max-width: 768px) {}
 
     &-svg {
       color: var(--quicksand);
     }
   }
 
-  @media screen and (width < 769px) {
 
+  @media screen and (width > 0px) and (width < 768px) {
 
-    &__link,
-    &__phone {
-      font-size: .625rem;
-      line-height: 1.5;
-    }
-
-    &__phone {
-      gap: 1px;
-    }
-
-    &__phone-svg {
-      width: 14px;
-      height: 14px;
-    }
-  }
-
-  @media screen and (width < 619px) {
-    .header & {
-      order: 1;
-    }
 
     &__burger-btn {
       display: flex;
     }
 
+    &__burger-btn-svg {
+      color: var(--coffee);
+    }
+
     .header &__list {
+    // .header__nav--list {
+      position: absolute;
       display: flex;
       flex-direction: column;
       gap: 20px;
       width: 153px;
-      position: absolute;
       padding: 25px 34px 43px 46px;
       color: var(--peach);
       background-color: var(--coffee);
-      top: 12%;
+      top: 65px;
       right: 0%;
       z-index: 2;
       transform: translateY(-159%);
       @include transition ($transition-property: transform);
     }
 
-    .header &__link{
-      @include transition ($transition-property:color);
+    .header &__list.menu--open {
+      transform: translateY(0%);
+    }
+
+    .header &__link {
+      @include transition ($transition-property: color);
+
       &:hover {
         color: var(--black);
       }
     }
 
-    .header &__list.menu--open {
-      transform: translateY(0%);
+  }
 
-
+  @media screen and (width > 480px) {
+    &__burger-btn {
+      margin-right: 7px;
     }
   }
 
-  @media screen and (width < 510px) {
-    .footer &__list {
-      flex-direction: column;
-      gap: 22px;
-      text-align: center;
+  @media screen and (width > 768px) {
+    &__list {
+      display: flex;
+    }
+
+    .header & {
+      order: 0;
+    }
+
+    &__burger-btn {
+      display: none;
     }
   }
+
+  @media screen and (width > 1000px) {
+
+    &__link,
+    &__phone {
+      font-size: .875rem;
+      line-height: calc(16/14);
+    }
+  }
+
+  &__phone-svg {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  // @media screen and (width < 510px) {
+    // .footer &__list {
+    //   flex-direction: column;
+    //   gap: 22px;
+    //   text-align: center;
+    // }
+  // }
 
 
 }

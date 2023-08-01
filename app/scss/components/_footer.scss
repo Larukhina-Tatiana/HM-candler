@@ -1,21 +1,47 @@
 .footer {
   background: var(--white);
-  padding-top: 39px;
-  padding-bottom: 34px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__logo img {
+    margin: 0 auto;
+  }
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    text-align: center;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
   }
 
-  &__contacts {
-    width: 230px;
+  & .nav__list {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background-color: var(--white);
   }
+
+  & .nav__link {
+    color: var(--gray-1);
+    font-size: .875rem;
+    line-height: calc(16/14);
+    @include transition ($transition-property: color);
+
+  &:hover {
+    color: var(--coffee);
+  }
+}
+
+  // &__contacts {
+  //   width: 230px;
+  // }
 
   &__phone {
     color: var(--gray1);
-    margin-bottom: 17px;
+    margin-bottom: 15px;
   }
 
   &__mail {
@@ -23,58 +49,58 @@
     margin-bottom: 15px;
   }
 
-  @media screen and (width > 480px) and (width < 769px) {
+  // @media screen and (width > 480px) and (width < 769px) {
 
-    &__nav .nav__link,
-    &__phone,
-    &__mail {
-      font-size: .625rem;
-      line-height: 1.5;
-    }
-  }
+  //   &__nav .nav__link,
+  //   &__phone,
+  //   &__mail {
+  //     font-size: .625rem;
+  //     line-height: 1.5;
+  //   }
+  // }
 
-  @media screen and (width < 901px) {
-    &__inner {
-      flex-wrap: wrap;
-    }
-    &__contacts {
-      width: 100%;
-      text-align: center;
-    }
-  }
+  // @media screen and (width < 901px) {
+  //   &__inner {
+  //     flex-wrap: wrap;
+  //   }
+  //   &__contacts {
+  //     width: 100%;
+  //     text-align: center;
+  //   }
+  // }
 
-  @media screen and (width < 769px) {
-    padding: 30px 0;
+  // @media screen and (width < 769px) {
+  //   padding: 30px 0;
 
-    &__phone,
-    &__mail {
-      margin-bottom: 10px;
-    }
-  }
+  //   &__phone,
+  //   &__mail {
+  //     margin-bottom: 10px;
+  //   }
+  // }
 
-  @media screen and (width < 510px) {
-    padding: 50px 0;
+  // @media screen and (width < 510px) {
+  //   padding: 50px 0;
 
-    &__inner {
-      flex-direction: column;
-    }
+  //   &__inner {
+  //     flex-direction: column;
+  //   }
 
 
-    &__nav {
-      padding: 50px 0;
-    }
+  //   &__nav {
+  //     padding: 50px 0;
+  //   }
 
-    &__nav .nav__list {
-      gap: 22px;
-    }
-  }
+  //   &__nav .nav__list {
+  //     gap: 22px;
+  //   }
+  // }
 
-  @media screen and (width < 481px) {
+  // @media screen and (width < 481px) {
 
-    &__phone,
-    &__mail {
-      margin-bottom: 15px;
-    }
-  }
+  //   &__phone,
+  //   &__mail {
+  //     margin-bottom: 15px;
+  //   }
+  // }
 
 }
