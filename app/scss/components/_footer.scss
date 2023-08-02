@@ -30,14 +30,10 @@
     line-height: calc(16/14);
     @include transition ($transition-property: color);
 
-  &:hover {
-    color: var(--coffee);
+    &:hover {
+      color: var(--coffee);
+    }
   }
-}
-
-  // &__contacts {
-  //   width: 230px;
-  // }
 
   &__phone {
     color: var(--gray1);
@@ -69,38 +65,80 @@
   //   }
   // }
 
-  // @media screen and (width < 769px) {
-  //   padding: 30px 0;
+  @media screen and (width > 768px) {
+    padding: 30px 0;
 
-  //   &__phone,
-  //   &__mail {
-  //     margin-bottom: 10px;
-  //   }
-  // }
+    &__inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 168px;
+    }
 
-  // @media screen and (width < 510px) {
-  //   padding: 50px 0;
+    & .nav__list {
+      flex-direction: row;
+      gap: 20px;
+      margin: 0;
+    }
 
-  //   &__inner {
-  //     flex-direction: column;
-  //   }
-
-
-  //   &__nav {
-  //     padding: 50px 0;
-  //   }
-
-  //   &__nav .nav__list {
-  //     gap: 22px;
-  //   }
-  // }
-
-  // @media screen and (width < 481px) {
-
-  //   &__phone,
-  //   &__mail {
-  //     margin-bottom: 15px;
-  //   }
-  // }
-
+    &__contacts {
+      margin: 15px auto 0;
+    }
+  }
+  @media screen and (width > 768px) and (width < 1000px) {
+  & .nav__link,
+  &__phone,
+  &__mail {
+    font-size: .625rem;
+    line-height: calc(15/10);
+  }
 }
+
+  @media screen and (width > 1000px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    &__inner {
+      column-gap: 80px;
+    }
+
+    &__contacts {
+      margin: 0;
+      text-align: left;
+    }
+  }
+
+  @media screen and (width > 1180px) {
+
+    &__contacts {
+      width: 206px;
+    }
+  }
+}
+
+// @media screen and (width < 510px) {
+//   padding: 50px 0;
+
+//   &__inner {
+//     flex-direction: column;
+//   }
+
+
+//   &__nav {
+//     padding: 50px 0;
+//   }
+
+//   &__nav .nav__list {
+//     gap: 22px;
+//   }
+// }
+
+// @media screen and (width < 481px) {
+
+//   &__phone,
+//   &__mail {
+//     margin-bottom: 15px;
+//   }
+// }
+
