@@ -56,23 +56,30 @@ dd {
 body {
     background: var(--peach);
     @extend %Comfortaa-400;
-    font-size: .875rem;
-    line-height: calc(16/14);
+    font-size: .625rem;
+    line-height: calc(11/10);
     color: var(--black);
     overflow-x: hidden;
-    min-width: 300px;
+    // min-width: 300px;
 
-    // @media screen and (width < 1000px ) {
-    //     font-size: .625rem;
+
+    @media screen and (width > 1000px) {
+        font-size: .875rem;
+        line-height: calc(16/14);
+    }
+
     // }
-    @media screen and (width < 769px) {
-        line-height: calc(15/10);
-    }
-    @media screen and (width < 481px) {
-        line-height: calc(11/10);
-    }
+    // @media screen and (width < 769px) {
+    //     line-height: calc(15/10);
+    // }
+    // @media screen and (width > 1000px) {
 
-    // @media screen and (width < 361px) {
+
+
+
+    // @media screen and (width > 480px) {
+    // font-size: .5rem;
+    // line-height: calc(12/8);
     //     line-height: calc(11/10);
     // }
 }
@@ -98,6 +105,7 @@ button,
 [type="submit"] {
     -webkit-appearance: button;
 }
+
 // ul.products__list>li.products__item*4>div.products__wrapp>img.products__item-img[src=images/products-$.jpg]+p.products__item-price{10$}+h3.title-h3+p.products__item-text+button.products__button-button{Купити}
 // .wrapper {
 //     display: flex;

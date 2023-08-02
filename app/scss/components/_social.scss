@@ -12,7 +12,7 @@
   &__link-svg {
     @include transition ($transition-property: fill);
 
-    @media screen and (min-width: 480px) and (max-width: 768px) {
+    @media screen and (width > 767px) and (width < 999px) {
       width: 18px;
       height: 18px;
     }
@@ -31,4 +31,6 @@
   @media screen and (width > 1000px) {
     justify-content: flex-start;
   }
+
+
 }

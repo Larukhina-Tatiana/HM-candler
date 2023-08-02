@@ -82,13 +82,13 @@
     }
   }
 
-  @media screen and (width > 480px) {
+  @media screen and (width > 479px) {
     &__burger-btn {
       margin-right: 7px;
     }
   }
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
     &__list {
       display: flex;
     }
@@ -102,17 +102,17 @@
     }
   }
 
-  @media screen and (width > 1000px) {
+  @media screen and (width > 999px) {
 
     &__link,
     &__phone {
       font-size: .875rem;
       line-height: calc(16/14);
     }
+    &__phone-svg {
+      width: 20px;
+      height: 20px;
+    }
   }
 
-  &__phone-svg {
-    width: 20px;
-    height: 20px;
-  }
 }
