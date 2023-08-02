@@ -54,7 +54,6 @@
     }
 
     .header &__list {
-    // .header__nav--list {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -81,7 +80,6 @@
         color: var(--black);
       }
     }
-
   }
 
   @media screen and (width > 480px) {
@@ -117,15 +115,4 @@
     width: 20px;
     height: 20px;
   }
-
-
-  // @media screen and (width < 510px) {
-    // .footer &__list {
-    //   flex-direction: column;
-    //   gap: 22px;
-    //   text-align: center;
-    // }
-  // }
-
-
 }

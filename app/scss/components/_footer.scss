@@ -10,9 +10,6 @@
   &__inner {
     display: block;
     text-align: center;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
   }
 
   & .nav__list {
@@ -45,25 +42,6 @@
     margin-bottom: 15px;
   }
 
-  // @media screen and (width > 480px) and (width < 769px) {
-
-  //   &__nav .nav__link,
-  //   &__phone,
-  //   &__mail {
-  //     font-size: .625rem;
-  //     line-height: 1.5;
-  //   }
-  // }
-
-  // @media screen and (width < 901px) {
-  //   &__inner {
-  //     flex-wrap: wrap;
-  //   }
-  //   &__contacts {
-  //     width: 100%;
-  //     text-align: center;
-  //   }
-  // }
 
   @media screen and (width > 768px) {
     padding: 30px 0;
@@ -86,19 +64,21 @@
       margin: 15px auto 0;
     }
   }
+
   @media screen and (width > 768px) and (width < 1000px) {
-  & .nav__link,
-  &__phone,
-  &__mail {
-    font-size: .625rem;
-    line-height: calc(15/10);
+
+    & .nav__link,
+    &__phone,
+    &__mail {
+      font-size: .625rem;
+      line-height: calc(15/10);
+    }
   }
-}
 
   @media screen and (width > 1000px) {
     padding-top: 40px;
     padding-bottom: 40px;
-    
+
     &__inner {
       column-gap: 80px;
     }
@@ -116,29 +96,3 @@
     }
   }
 }
-
-// @media screen and (width < 510px) {
-//   padding: 50px 0;
-
-//   &__inner {
-//     flex-direction: column;
-//   }
-
-
-//   &__nav {
-//     padding: 50px 0;
-//   }
-
-//   &__nav .nav__list {
-//     gap: 22px;
-//   }
-// }
-
-// @media screen and (width < 481px) {
-
-//   &__phone,
-//   &__mail {
-//     margin-bottom: 15px;
-//   }
-// }
-

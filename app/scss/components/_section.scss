@@ -1,6 +1,10 @@
 .section {
 
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+
+  @media screen and (width > 768px) {
+    padding-bottom: 150px;
+  }
 //   margin-bottom: 150px;
 
 //   &__title {
@@ -57,7 +61,7 @@
 
 
 
-//   @media screen and (width < 769px) {
+//   @media screen and (width > 768px) {
 //     &__content {
 //       min-width: 200px;
 //       margin-bottom: 15px;

@@ -1,6 +1,7 @@
 .header {
   padding-top: 4px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  outline: 1px solid blue;
 
   &__inner {
     display: flex;

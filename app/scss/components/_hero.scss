@@ -1,57 +1,60 @@
 .hero {
-  padding: 40px 0 150px;
+  // padding: 40px 0 150px;
 
   &__inner {
     position: relative;
   }
 
   &__content {
-    width: 370px;
-    padding: 150px 0 250px;
+    width: 203px;
   }
 
   &__text {
-    margin-bottom: 48px;
+    font-size: .625rem;
+    line-height: calc(11/10);
+    margin-bottom: 15px;
   }
 
   &__bg {
-    top: 0;
-    left: 240px;
+    top: -50px;
+    left: 174px;
     position: absolute;
     overflow: hidden;
 
     & img {
-      min-width: 1069px;
+      min-width: 202px;
     }
   }
 
-  @media screen and (width < 1001px) {
+  @media screen and (width > 480px) {
     &__content {
-      width: 333px;
-      padding: 95px 0 70px;
+      width: 179px;
+      padding: 80px 0 80px;
     }
 
     &__text {
-      margin-bottom: 30px;
+      font-size: .5rem;
+      line-height: calc(12/8);
     }
 
     &__bg {
-      left: 320px;
+      top: -20px;
+      left: 174px;
+    }
 
-      & img {
-        min-width: 701px;
-      }
+    &__bg img {
+      min-width: 309px;
     }
   }
 
-  @media screen and (width < 769px) {
+  @media screen and (width > 768px) {
     &__content {
       width: 230px;
       padding: 95px 0 70px;
     }
 
     &__text {
-      margin: 20px 0;
+      margin-bottom: 20px;
       font-size: .625rem;
       line-height: calc(15/10);
     }
@@ -65,51 +68,51 @@
     }
   }
 
-  @media screen and (width < 481px) {
-    padding: 30px 0 50px;
 
+  @media screen and (width > 1000px) {
     &__content {
-      width: 179px;
-      padding: 80px 0 80px;
+      width: 300px;
+    }
+
+    & .title-h1 {
+      width: 333px;
     }
 
     &__text {
-      margin: 15px 0;
-      font-size: .5rem;
-      line-height: calc(12/8);
+      font-size: inherit;
+      line-height: calc(16/14);
+      margin-bottom: 30px;
     }
 
     &__bg {
-      left: 180px;
-    }
+      left: 320px;
 
-    &__bg img {
-      min-width: 309px;
+      & img {
+        min-width: 690px;
+      }
     }
   }
 
-  @media screen and (width < 361px) {
-
+  @media screen and (width > 1000px) {
     &__content {
-      width: 203px;
-      padding: 20px 0 0;
+      width: 371px;
+      padding: 95px 0 283px;
     }
 
-    & .title-h2 {
-      margin-bottom: 10px;
+    & .title-h1 {
+      width: 391px;
     }
 
     &__text {
-      font-size: .625rem;
-      line-height: calc(11/10);
+      margin-bottom: 50px;
     }
 
     &__bg {
-      left: 210px;
-    }
+      left: 241px;
 
-    &__bg img {
-      min-width: 162px;
+      & img {
+        min-width: 1069px;
+      }
     }
   }
 
