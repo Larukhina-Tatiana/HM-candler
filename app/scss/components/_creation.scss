@@ -1,35 +1,35 @@
 .creation {
 
   &__list {
-    display: flex;
-    gap: 72px 24px;
+    gap: 20px 25px;
+    padding-left: 3px;
+    padding-bottom: 50px;
   }
 
   &__item {
     display: flex;
-    flex-basis: calc((100% - 24px) / 2);
-    gap: 38px;
-
-    &-text {
-      width: 174px;
-      height: 183px;
-      // min-height: 183px;
-      margin-bottom: 6px;
-    }
-
-    & picture {
-      overflow: hidden;
-    }
+    gap: 16px;
+    flex-basis: calc((100% - 25px) / 2);
 
     &-img {
-      object-fit: cover;
+      width: 67px;
+      height: 100px;
+    }
+
+    &-text {
+      font-size: .375rem;
+      line-height: calc(7/6);
+      width: 73px;
+      height: 85px;
+      margin-bottom: 3px;
+      padding: 0 3px;
     }
 
     &-num {
-      color: var(--unnamed, #BEA495);
+      color: var(--quicksand);
       @extend %YesevaOne-400;
-      font-size: 1.875rem;
-      line-height: calc(35/30);
+      font-size: .75rem;
+      line-height: calc(14/12);
     }
   }
 
@@ -37,52 +37,23 @@
     order: -1;
   }
 
-  @media screen and (max-width : 1001px) {
+
+  @media screen and (width > 479px) {
+
+    &__text {
+      margin-bottom: 30px;
+    }
 
     &__list {
-      gap: 34px 24px;
-      padding-left: 25px;
-    }
-
-    &__item {
-      gap: 31px;
-
-      &-img {
-        width: 129px;
-        height: 226px;
-      }
-
-      &-text {
-        width: 141px;
-        height: 187px;
-      }
-    }
-  }
-
-  @media screen and (max-width : 909px) {
-
-    & .title-h2 {
-      font-size: .9375rem;
-      line-height: calc(17/15);
-    }
-
-    &__content {
-      min-width: 200px;
-    }
-
-    &__item {
-      gap: 10px;
-    }
-  }
-
-  @media screen and (width < 769px) {
-    &__list {
-      padding-left: 4px;
+      gap: 25px 40px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-bottom: 50px;
     }
 
     &__item {
       gap: 20px;
-      flex-basis: calc((100% - 35px) / 2);
+      flex-basis: calc((100% - 40px) / 2);
 
       &-img {
         width: 86px;
@@ -94,59 +65,94 @@
         line-height: calc(9/8);
         width: 92px;
         height: 125px;
+        margin-bottom: 4px;
       }
 
       &-num {
+        color: var(--quicksand);
+        @extend %YesevaOne-400;
         font-size: 1.25rem;
         line-height: calc(23/20);
       }
     }
   }
 
-  @media screen and (width < 522px) {
+  @media screen and (width > 767px) {
+
+    &__text {
+      margin-bottom: 0;
+    }
 
     &__list {
-      padding-left: 10px;
-      padding-bottom: 69px;
       gap: 25px 35px;
+      padding-left: 4px;
+      padding-right: 0;
+      padding-bottom: 50px;
     }
 
     &__item {
-      flex-basis: calc((100% - 40px) / 2);
-
-      &-text {
-        margin-bottom: 4px;
-      }
+      flex-basis: calc((100% - 35px) / 2);
     }
   }
 
-  @media screen and (width < 381px) {
+
+  @media screen and (width > 999px) {
+
+    &__text {
+      font-size: .875rem;
+      line-height: calc(16/14);
+    }
 
     &__list {
-      gap: 20px 25px;
+      gap: 35px 34px;
+      padding-left: 25px;
+      padding-bottom: 70px;
     }
 
     &__item {
-      gap: 16px;
-      flex-basis: calc((100% - 25px) / 2);
+      gap: 31px;
+      flex-basis: calc((100% - 34px) / 2);
 
       &-img {
-        width: 66px;
-        height: 100px;
+        width: 129px;
+        height: 226px;
       }
 
       &-text {
-        font-size: .375rem;
-        line-height: calc(7/6);
-        width: 72px;
-        height: 83px;
+        font-size: .875rem;
+        line-height: calc(16/14);
+        width: 138px;
+        height: 188px;
       }
 
       &-num {
-        font-size: .75rem;
-        line-height: calc(14/12);
+        font-size: 1.875rem;
+        line-height: calc(35/30);
       }
     }
   }
 
+  @media screen and (width > 1179px) {
+
+    &__list {
+      gap: 72px 25px;
+      padding-left: 20px;
+    }
+
+    &__item {
+      gap: 38px;
+      flex-basis: calc((100% - 25px) / 2);
+
+      &-img {
+        width: 159px;
+        height: 220px;
+      }
+
+      &-text {
+        width: 171px;
+        height: 183px;
+      }
+    }
+  }
 }
+

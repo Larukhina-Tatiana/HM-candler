@@ -41,6 +41,13 @@
     }
   }
 
+  &__text {
+    font-size: .625rem;
+    line-height: calc(11/10);
+    margin-bottom: 25px;
+  }
+
+
   @media screen and (width > 479px) {
     &__content {
       width: 300px;

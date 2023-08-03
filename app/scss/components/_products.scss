@@ -33,7 +33,7 @@
       font-size: .375rem;
       line-height: calc(7/6);
       padding: 0 5px;
-      min-height: 27px;
+      min-height: 30px;
     }
 
     & .title-h3 {
@@ -76,7 +76,6 @@
       &-text {
         font-size: .5rem;
         line-height: calc(9/8);
-        min-height: 27px;
       }
 
     }
@@ -123,7 +122,6 @@
   }
 
   @media screen and (width > 1179px) {
-
     &__list {
       padding-left: 49px;
       gap: 50px 93px;
