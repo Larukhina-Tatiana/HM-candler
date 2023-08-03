@@ -46,9 +46,15 @@
 }
 
   .title-h3 {
-    font-size: 1rem;
-    line-height: calc(18/16);
+    font-size: .625rem;
+    line-height: calc(12/10);
     color: var(--black);
     @extend %YesevaOne-400;
+
+
+  @media screen and (width > 999px) {
+    font-size: 1rem;
+    line-height: calc(18/16);
   }
+}
 

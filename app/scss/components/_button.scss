@@ -5,8 +5,8 @@
   background-color: var(--koromiko);
   color: #272727;
   @extend %Comfortaa-600;
-  font-size: .875rem;
-  line-height: calc(16/14);
+  font-size: .625rem;
+  line-height: calc(12/10);
   text-align: center;
   @include transition ($transition-property: (background-color, color));
 
@@ -22,7 +22,12 @@
   }
 
   &--products {
-    padding: 18px 54px;
+    margin: 0 auto;
+    width: 78px;
+    height: 30px;
+    padding: 3px;
+    font-size: .5rem;
+    line-height: calc(9/8);
   }
 
   &--courses {
@@ -31,6 +36,21 @@
     padding: 5px;
   }
 
+  @media screen and (width > 479px) {
+
+    &--hero {
+      font-size: .875rem;
+      line-height: calc(9/8);
+    }
+
+    &--products {
+      width: 103px;
+      height: 35px;
+
+      font-size: .75rem;
+      line-height: calc(13/12);
+    }
+  }
 
   @media screen and (width > 767px) {
 
@@ -40,13 +60,22 @@
       padding: 3px;
     }
   }
-    @media screen and (width > 999px) {
 
-      &--hero {
-        width: 150px;
-        height: 55px;
-        padding: 3px;
-      }
+  @media screen and (width > 999px) {
+
+    &--hero {
+      width: 150px;
+      height: 55px;
+      padding: 3px;
+    }
+
+    &--products {
+      width: 150px;
+      height: 55px;
+
+      font-size: .875rem;
+      line-height: calc(16/14);
+    }
 
     // &--products,
     // &--courses {

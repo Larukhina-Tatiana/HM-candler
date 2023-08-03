@@ -44,7 +44,6 @@
 
   @media screen and (width > 0px) and (width < 768px) {
 
-
     &__burger-btn {
       display: flex;
     }
@@ -109,10 +108,10 @@
       font-size: .875rem;
       line-height: calc(16/14);
     }
+
     &__phone-svg {
       width: 20px;
       height: 20px;
     }
   }
-
 }

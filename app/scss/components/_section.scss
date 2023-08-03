@@ -1,30 +1,26 @@
 .section {
 
-  padding-bottom: 50px;
+  padding-bottom: 59px;
 
-  //   margin-bottom: 150px;
-  
-//   &__title {
-//     color: var(--black);
-//   }
-//   &__inner {
-//     display: flex;
-//     gap: 20px;
-//   }
+  &__content {
+    margin: 0 auto;
+    width: 235px;
+    text-align: center;
+  }
 
-//   &__content {
-//     min-width: 370px;
-//     width: 370px;
-//     // width: 100%;
-//   }
+  &__title {
+    color: var(--black);
+    margin-bottom: 10px;
+  }
 
-  &__list{
+
+  &__list {
     position: relative;
     display: flex;
     flex-wrap: wrap;
     padding-left: 9px;
     padding-bottom: 32px;
-    // padding-bottom: 70px;
+
     &::before {
       position: absolute;
       content: url(../images/section-decor.svg);
@@ -45,57 +41,54 @@
     }
   }
 
+  @media screen and (width > 479px) {
+    &__content {
+      width: 300px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+    }
+  }
+
   @media screen and (width > 767px) {
     padding-bottom: 150px;
+
+    &__inner {
+      display: flex;
+      gap: 13px;
+    }
+
+    &__content {
+      min-width: 200px;
+      text-align: left;
+      // width: 300px;
+    }
   }
-//   @media screen and (width < 1001px) {
-//     &__content {
-//       min-width: 300px;
-//       // width: 300px;
-//     }
 
-    
-//   &__inner {
-//     display: flex;
-//     gap: 0;
-//   }
-//   }
+  @media screen and (width > 999px) {
 
+    &__inner {
+      display: flex;
+      gap: 0;
+    }
 
+    &__content {
+      min-width: 300px;
+      // width: 300px;
+    }
+  }
 
-//   @media screen and (width > 768px) {
-//     &__content {
-//       min-width: 200px;
-//       margin-bottom: 15px;
-//     }
+  @media screen and (width > 1179px) {
 
-//     &__text {
-//       font-size: .625rem;
-//       line-height: calc(11/10);
-//     }
-//   }
+    &__inner {
+      display: flex;
+      gap: 0;
+    }
 
-//   @media screen and (width < 522px) {
-//     margin-bottom: 60px;
-//     &__inner {
-//       flex-direction: column;
-//       align-items: center;
-//     }
-
-//     &__content {
-//       text-align: center;
-//       min-width: 300px;
-//       margin-bottom: 30px;
-//     }
-//   }
-
-//   @media screen and (width < 361px) {
-//     &__content {
-//     min-width: 235px;
-//     width: 235px;
-//     margin-bottom: 25px;
-//   }
-// }
-
-
+    &__content {
+      min-width: 370px;
+      gap: 0 20px;
+    }
+  }
 }

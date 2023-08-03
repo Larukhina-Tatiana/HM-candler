@@ -3,6 +3,7 @@
   color: var(--gray);
 
   padding: 25px 0 40px;
+  margin-bottom: 50px;
 
   &__inner {
     display: flex;
@@ -25,11 +26,6 @@
 
   &__list {
     display: flex;
-    // align-items: flex-end;
-    // margin-left: 12px;
-    // padding-left: 12px;
-    // padding-bottom: 30px;
-    // gap: 0 5px;
   }
 
   &__item-img--1 {
@@ -89,6 +85,7 @@
 
   @media screen and (width > 767px) {
     padding-bottom: 90px;
+    margin-bottom: 150px;
 
     &__inner {
       gap: 27px;
@@ -140,7 +137,7 @@
     padding-bottom: 60px;
 
     &__inner {
-      gap:0;
+      gap: 0;
     }
 
     &__content {
@@ -192,90 +189,10 @@
     }
 
     &__list {
-
       padding-left: 89px;
       padding-bottom: 48px;
       gap: 0 20px;
       min-width: 820px;
     }
   }
-
-
-
-
-  // @media screen and (width > 1001px) {
-  //   padding: 50px 0 50px;
-  //   margin-bottom: 150px;
-  //   &__inner {
-  //     display: flex;
-  //     align-items: center;
-  //     justify-content: space-between;
-  //   }
-
-  //   &__content {
-  //     min-width: 370px;
-  //   }
-
-  //   & .title-h2 {
-  //     margin-bottom: 15px;
-  //   }
-
-
-  //   &__list {
-  //     box-sizing: content-box;
-  //     display: flex;
-  //     align-items: center;
-  //     gap: 0 20px;
-  //     padding-left: 110px;
-  //     padding-bottom: 48px;
-  //     min-width: 820px;
-  //     // position: relative;
-
-  //     // &::before {
-  //     //   position: absolute;
-  //     //   content: url(../images/section-decor.png);
-  //     //   width: 22px;
-  //     //   height: 30px;
-  //     //   left: 0;
-  //     //   bottom: 0;
-  //     // }
-
-  //     // &::after {
-  //     //   position: absolute;
-  //     //   content: '';
-  //     //   background-color: var(--coffee);
-  //     //   width: 100%;
-  //     //   height: 1px;
-  //     //   left: 22px;
-  //     //   bottom: 11px;
-  //     // }
-  //   }
-
-  //   &__item-img {
-  //     margin-bottom: 10px;
-  //   }
-
-  //   &__item-text {
-  //     font-size: .6875rem;
-  //   }
-  // }
-
-  // @media screen and (width < 1001px) {
-
-  //   &__content {
-  //     min-width: 300px;
-  //   }
-
-  //   &__list {
-  //     padding-left: 20px;
-  //   }
-  // }
-
-
-  // @media screen and (width < 522px) {
-  //   margin-bottom: 50px;
-  // }
-
-
-
 }
