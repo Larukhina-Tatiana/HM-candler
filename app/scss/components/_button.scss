@@ -32,7 +32,7 @@
   }
 
 
-  @media screen and (width > 768px) {
+  @media screen and (width > 767px) {
 
     &--hero {
       width: 120px;
@@ -40,7 +40,7 @@
       padding: 3px;
     }
   }
-    @media screen and (width > 1000px) {
+    @media screen and (width > 999px) {
 
       &--hero {
         width: 150px;

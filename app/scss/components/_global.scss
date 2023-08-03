@@ -63,10 +63,12 @@ body {
     // min-width: 300px;
 
 
-    @media screen and (width > 1000px) {
+    @media screen and (width > 999px) {
         font-size: .875rem;
         line-height: calc(16/14);
     }
+
+
 
     // }
     // @media screen and (width < 769px) {
