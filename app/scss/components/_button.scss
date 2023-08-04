@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3px;
   background-color: var(--koromiko);
   color: #272727;
   @extend %Comfortaa-600;
@@ -18,7 +19,6 @@
   &--hero {
     width: 91px;
     height: 34px;
-    padding: 3px;
   }
 
   &--products {
@@ -31,9 +31,11 @@
   }
 
   &--courses {
-    width: 129px;
-    height: 42px;
-    padding: 5px;
+    margin: 0 auto;
+    width: 115px;
+    height: 39px;
+    font-size: .75rem;
+    line-height: calc(13/12);
   }
 
   @media screen and (width > 479px) {
@@ -57,54 +59,32 @@
     &--hero {
       width: 120px;
       height: 45px;
-      padding: 3px;
     }
   }
 
   @media screen and (width > 999px) {
 
+    &--hero,
+    &--products,
+    &--courses {
+      font-size: .875rem;
+      line-height: calc(16/14);
+    }
+
     &--hero {
       width: 150px;
       height: 55px;
-      padding: 3px;
     }
 
     &--products {
       width: 150px;
       height: 55px;
-
-      font-size: .875rem;
-      line-height: calc(16/14);
     }
 
-    // &--products,
-    // &--courses {
-    //   width: 103px;
-    //   height: 36px;
-    //   padding: 5px;
-    //   font-size: .75rem;
-    //   line-height: calc(13/12);
-    // }
+    &--courses {
+      width: 129px;
+      height: 42px;
+    }
+
   }
-
-
-  // @media screen and (width < 481px) {
-
-  //   &__hero {
-  //     // width: 91px;
-  //     // height: 34px;
-  //     padding: 14px 41px;
-  //     font-size: .6875rem;
-  //   }
-  // }
-
-  // @media screen and (width < 361px) {
-
-  //   &--products {
-  //     width: 78px;
-  //     height: 30px;
-  //     font-size: .5rem;
-  //     line-height: calc(9/8);
-  //   }
-  // }
 }

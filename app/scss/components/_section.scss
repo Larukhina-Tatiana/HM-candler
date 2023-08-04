@@ -71,6 +71,10 @@
       text-align: left;
       // width: 300px;
     }
+
+    &__text {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (width > 999px) {
@@ -83,6 +87,11 @@
     &__content {
       min-width: 300px;
       // width: 300px;
+    }
+
+    &__text {
+      font-size: .875rem;
+      line-height: calc(16/14);
     }
   }
 

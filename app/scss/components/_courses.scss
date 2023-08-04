@@ -1,19 +1,22 @@
 .courses {
 
+  &__content {
+    width: 205px;
+  }
+
   &__list {
-    padding-left: 20px;
+    justify-content: center;
     text-align: center;
+    gap: 30px 0;
   }
 
   &__item {
-    margin-right: 53px;
-    margin-left: 53px;
-    // flex-basis: 269px;
-    flex-basis: calc((100% - 212px) / 2);
+    flex-basis: 288px;
     position: relative;
 
     &-img {
-      margin-bottom: 28px;
+      margin: 0 auto 35px;
+      width: 195px;
     }
 
     &-name,
@@ -32,16 +35,16 @@
       padding: 15px 15px 15px 10px;
       width: 191px;
       height: 43px;
-      left: 0px;
-      top: 166px;
+      left: 46px;
+      top: 126px;
     }
 
     &-clock {
       padding: 7px 7px 7px 10px;
       width: 129px;
       height: 27px;
-      left: 0px;
-      top: 224px;
+      left: 46px;
+      top: 184px;
 
       & span {
         color: #FFF;
@@ -55,92 +58,123 @@
       padding: 19px 12px 19px 10px;
       width: 86px;
       height: 50px;
-      left: 196px;
-      top: 320px;
+      left: 156px;
+      top: 230px;
+    }
+
+    & .title-h3 {
+      font-size: .75rem;
+      line-height: calc(14/12);
     }
 
     &-text {
-      font-size: .875rem;
-      margin-top: 15px;
-      margin-bottom: 24px;
+      font-size: .625rem;
+      line-height: calc(11/10);
+      margin-top: 9px;
+      margin-bottom: 11px;
     }
   }
 
-  @media screen and (width < 1180px) and (width > 1000px) {
-    & .title-h3 {
-      font-size: calc(11px + (16 - 11) * ((100vw - 1000px)/ (1180 - 1000)));
+  @media screen and (width > 479px) {
+    & .title-h2 {
+      margin-bottom: 10px;
+    }
+
+    &__content {
+      width: 300px;
     }
 
     &__list {
-      justify-content: space-evenly;
+      gap: 0;
+      justify-content: space-between;
     }
 
     &__item {
-      margin-right: calc(10px + (53 - 10) * ((100vw - 1000px)/ (1180 - 1000)));
-      margin-left: calc(10px + (53 - 10) * ((100vw - 1000px)/ (1180 - 1000)));
+      flex-basis: calc((100% - 38px) / 2);
 
-
-      &-price {
-        top: calc(222px + (320 - 222) * ((100vw - 1000px)/ (1180 - 1000)));
-        left: calc(136px + (196 - 136) * ((100vw - 1000px)/ (1180 - 1000)));
-      }
-
-      &-text {
-        font-size: calc(10px + (14 - 10) * ((100vw - 1000px)/ (1180 - 1000)));
-      }
-    }
-  }
-
-  @media screen and (width < 1001px) {
-
-    & .title-h3 {
-      font-size: calc(12px + (16 - 12) * ((100vw - 786px)/ (1000 - 768)));
-    }
-
-    &__item {
-      flex-basis: calc((100% - 54px) / 2);
-      margin-right: calc(5px + (14 - 5) * ((100vw - 786px)/ (1000 - 768)));
-      margin-left: calc(5px + (14 - 5) * ((100vw - 786px)/ (1000 - 768)));
 
       &-img {
-        width: calc(195px + (268 - 195) * ((100vw - 786px)/ (1000 - 768)));
-      }
-
-      &-name,
-      &-clock,
-      &-price {
-        font-size: .5rem;
+        margin: 0 0 35px;
       }
 
       &-name {
-        padding: 7px;
-        width: 151px;
-        height: 23px;
-        top: calc(122px + (166 - 122) * ((100vw - 786px)/ (1000 - 768)));
+        left: 0px;
+        top: 130px;
       }
 
       &-clock {
-        padding: 6px;
-        width: 99px;
-        height: 23px;
-        top: calc(176px + (224 - 176) * ((100vw - 786px)/ (1000 - 768)));
+        left: 0px;
+        top: 190px;
       }
 
       &-price {
-        padding: 6px;
-        width: 66px;
-        height: 25px;
-        top: calc(210px + (320 - 210) * ((100vw - 689px)/ (1000 - 689)));
-        left: calc(110px + (196 - 110) * ((100vw - 689px)/ (1000 - 689)));
-      }
-
-      &-text {
-        font-size: calc(10px + (14 - 10) * ((100vw - 786px)/ (1000 - 768)));
+        left: 109px;
+        top: 230px;
       }
     }
   }
 
-  @media screen and (width < 689px) {
-    
+  @media screen and (width > 767px) {
+    & .title-h2 {
+      margin-bottom: 15px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 25px) / 2);
+
+      &-name {
+        top: 125px;
+      }
+
+      &-clock {
+        top: 185px;
+      }
+
+      &-price {
+        left: 111px;
+        top: 232px;
+      }
+    }
+  }
+
+  @media screen and (width > 999px) {
+
+    &__inner {
+      gap: 33px;
+    }
+
+    &__item {
+      flex-basis: calc((100% - 77px) / 2);
+
+      &-img {
+        width: 268px;
+        margin-bottom: 28px;
+      }
+
+      &-name {
+        top: 168px;
+      }
+
+      &-clock {
+        top: 235px;
+      }
+
+      &-price {
+        left: 182px;
+        top: 325px;
+      }
+
+      &-text {
+        font-size: .875rem;
+        line-height: calc(16/14);
+        margin-top: 15px;
+        margin-bottom: 24px;
+      }
+    }
+
+    & .title-h3 {
+      font-size: 1rem;
+      line-height: calc(18/16);
+    }
   }
 }
