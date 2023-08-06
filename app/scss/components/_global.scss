@@ -60,7 +60,7 @@ body {
     line-height: calc(11/10);
     color: var(--black);
     overflow-x: hidden;
-    // min-width: 300px;
+    min-width: 100vw;
 
 
     @media screen and (width > 999px) {

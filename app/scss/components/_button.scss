@@ -38,6 +38,14 @@
     line-height: calc(13/12);
   }
 
+  &--reviews {
+    margin: 0 auto;
+    width: 124px;
+    height: 39px;
+    font-size: .5rem;
+    line-height: calc(9/8);
+  }
+
   @media screen and (width > 479px) {
 
     &--hero {

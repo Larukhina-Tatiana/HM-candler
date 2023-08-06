@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HM Candler</title>
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="libs/slick/slick.css">
   <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 
@@ -549,7 +551,7 @@
                 " src="./images/teachers-2@1x.jpg" alt="Фото викладача Анни" sizes="(max-width: 360px) 204px">
               </picture>
               <div class="teachers__descr">
-                <h4 class="title-h4">Викладач Анна</h3>
+                <h4 class="title-h4">Викладач Анна</h4>
                 <p class="teachers__descr-text">Має досвід викладання і роботи 6 років</p>
               </div>
             </li>
@@ -581,11 +583,162 @@
                 " src="./images/teachers-4@1x.jpg" alt="Фото викладача Ольги" sizes="(max-width: 360px) 204px">
               </picture>
               <div class="teachers__descr">
-                <h4 class="title-h4">Маркетолог Ольга</h3>
+                <h4 class="title-h4">Маркетолог Ольга</h4>
                 <p class="teachers__descr-text">Допоможе вам з рекламою</p>
               </div>
             </li>
           </ul>
+        </div>
+      </div>
+    </section>
+    <section class="reviews section">
+      <div class="container">
+        <div class="reviews__inner section__inner">
+          <div class="reviews__content section__content">
+            <h2 class="title-h2 section__title">Відгуки від клієнтів</h2>
+            <p class="reviews__text section__text">
+              Наші покупці мають різний вік, статус, заняття і інтереси, але у них є одна спільна риса - вони прагнуть
+              до гармонії і знаходять радість у маленьких радощах життя, які створюють атмосферу затишку та гармонії у
+              їхньому домі.
+            </p>
+          </div>
+          <div class="reviews__slider">
+
+            <div class="reviews__slider-item">
+              <div class="reviews__slider-inner">
+                <div class="reviews__video">
+                  <img class="reviews__video-img" src="./images/reviews-1.jpg"
+                    alt="Фото свічки 'Жіноча чарівність' на яку робиться відгук">
+                  <a class="reviews__play-link" data-fancybox href="https://">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M19.7916 34.375L34.375 25L19.7916 15.625V34.375ZM25 45.8333C22.118 45.8333 19.4097 45.2861 16.875 44.1916C14.3402 43.0972 12.1354 41.6132 10.2604 39.7395C8.38538 37.8645 6.90135 35.6597 5.80829 33.125C4.71524 30.5902 4.16801 27.8819 4.16663 25C4.16663 22.118 4.71385 19.4097 5.80829 16.875C6.90274 14.3402 8.38677 12.1354 10.2604 10.2604C12.1354 8.38538 14.3402 6.90135 16.875 5.80829C19.4097 4.71524 22.118 4.16801 25 4.16663C27.8819 4.16663 30.5902 4.71385 33.125 5.80829C35.6597 6.90274 37.8645 8.38677 39.7395 10.2604C41.6145 12.1354 43.0993 14.3402 44.1937 16.875C45.2882 19.4097 45.8347 22.118 45.8333 25C45.8333 27.8819 45.2861 30.5902 44.1916 33.125C43.0972 35.6597 41.6132 37.8645 39.7395 39.7395C37.8645 41.6145 35.6597 43.0993 33.125 44.1937C30.5902 45.2882 27.8819 45.8347 25 45.8333Z"
+                        fill="#BDBDBD" fill-opacity="0.87" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="reviews__slider-content">
+                  <a href="" class="social__link">
+                    <svg class="social__link-svg" width="22" height="22" aria-label="icon Instagram">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                  <blockquote class="reviews__comment">
+                    <cite class="reviews__comment-name">Іван Пилипенко</cite>
+                    <p class="reviews__comment-text">
+                      "Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто
+                      неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього
+                      свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                  </blockquote>
+                  <button class="button button--reviews">Купити цей товар</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slider-item">
+              <div class="reviews__slider-inner">
+                <div class="reviews__video">
+                  <img class="reviews__video-img" src="./images/products-1@2x.jpg"
+                    alt="Фото свічки 'Жіноча чарівність' на яку робиться відгук">
+                  <a class="reviews__play-link" data-fancybox href="https://">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M19.7916 34.375L34.375 25L19.7916 15.625V34.375ZM25 45.8333C22.118 45.8333 19.4097 45.2861 16.875 44.1916C14.3402 43.0972 12.1354 41.6132 10.2604 39.7395C8.38538 37.8645 6.90135 35.6597 5.80829 33.125C4.71524 30.5902 4.16801 27.8819 4.16663 25C4.16663 22.118 4.71385 19.4097 5.80829 16.875C6.90274 14.3402 8.38677 12.1354 10.2604 10.2604C12.1354 8.38538 14.3402 6.90135 16.875 5.80829C19.4097 4.71524 22.118 4.16801 25 4.16663C27.8819 4.16663 30.5902 4.71385 33.125 5.80829C35.6597 6.90274 37.8645 8.38677 39.7395 10.2604C41.6145 12.1354 43.0993 14.3402 44.1937 16.875C45.2882 19.4097 45.8347 22.118 45.8333 25C45.8333 27.8819 45.2861 30.5902 44.1916 33.125C43.0972 35.6597 41.6132 37.8645 39.7395 39.7395C37.8645 41.6145 35.6597 43.0993 33.125 44.1937C30.5902 45.2882 27.8819 45.8347 25 45.8333Z"
+                        fill="#BDBDBD" fill-opacity="0.87" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="reviews__slider-content">
+                  <a href="" class="social__link">
+                    <svg class="social__link-svg" width="22" height="22" aria-label="icon Instagram">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+
+                  <blockquote class="reviews__comment">
+                    <cite class="reviews__comment-name">Сергій Лукаш</cite>
+                    <p class="reviews__comment-text">
+                      "Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто
+                      неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього
+                      свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                  </blockquote>
+                  <button class="button button--reviews">Купити цей товар</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews__slider-item">
+              <div class="reviews__slider-inner">
+                <div class="reviews__video">
+                  <img class="reviews__video-img" src="./images/products-2@2x.jpg"
+                    alt="Фото свічки 'Жіноча чарівність' на яку робиться відгук">
+                  <a class="reviews__play-link" data-fancybox href="https://">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M19.7916 34.375L34.375 25L19.7916 15.625V34.375ZM25 45.8333C22.118 45.8333 19.4097 45.2861 16.875 44.1916C14.3402 43.0972 12.1354 41.6132 10.2604 39.7395C8.38538 37.8645 6.90135 35.6597 5.80829 33.125C4.71524 30.5902 4.16801 27.8819 4.16663 25C4.16663 22.118 4.71385 19.4097 5.80829 16.875C6.90274 14.3402 8.38677 12.1354 10.2604 10.2604C12.1354 8.38538 14.3402 6.90135 16.875 5.80829C19.4097 4.71524 22.118 4.16801 25 4.16663C27.8819 4.16663 30.5902 4.71385 33.125 5.80829C35.6597 6.90274 37.8645 8.38677 39.7395 10.2604C41.6145 12.1354 43.0993 14.3402 44.1937 16.875C45.2882 19.4097 45.8347 22.118 45.8333 25C45.8333 27.8819 45.2861 30.5902 44.1916 33.125C43.0972 35.6597 41.6132 37.8645 39.7395 39.7395C37.8645 41.6145 35.6597 43.0993 33.125 44.1937C30.5902 45.2882 27.8819 45.8347 25 45.8333Z"
+                        fill="#BDBDBD" fill-opacity="0.87" />
+                    </svg>
+                  </a>
+                </div>
+                <div class="reviews__slider-content">
+
+                  <a href="" class="social__link">
+                    <svg class="social__link-svg" width="22" height="22" aria-label="icon Instagram">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+
+                  <blockquote class="reviews__comment">
+                    <cite class="reviews__comment-name">Тетяна Січкарюк</cite>
+                    <p class="reviews__comment-text">
+                      "Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто
+                      неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього
+                      свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                  </blockquote>
+                  <button class="button button--reviews">Купити цей товар</button>
+                </div>
+              </div>
+            </div>
+            <div class="reviews__slider-item">
+              <div class="reviews__slider-inner">
+                <div class="reviews__video">
+                  <img class="reviews__video-img" src="./images/products-3@2x.jpg"
+                    alt="Фото свічки 'Жіноча чарівність' на яку робиться відгук">
+
+                  <a class="reviews__play-link" data-fancybox href="https://">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                      <path
+                        d="M19.7916 34.375L34.375 25L19.7916 15.625V34.375ZM25 45.8333C22.118 45.8333 19.4097 45.2861 16.875 44.1916C14.3402 43.0972 12.1354 41.6132 10.2604 39.7395C8.38538 37.8645 6.90135 35.6597 5.80829 33.125C4.71524 30.5902 4.16801 27.8819 4.16663 25C4.16663 22.118 4.71385 19.4097 5.80829 16.875C6.90274 14.3402 8.38677 12.1354 10.2604 10.2604C12.1354 8.38538 14.3402 6.90135 16.875 5.80829C19.4097 4.71524 22.118 4.16801 25 4.16663C27.8819 4.16663 30.5902 4.71385 33.125 5.80829C35.6597 6.90274 37.8645 8.38677 39.7395 10.2604C41.6145 12.1354 43.0993 14.3402 44.1937 16.875C45.2882 19.4097 45.8347 22.118 45.8333 25C45.8333 27.8819 45.2861 30.5902 44.1916 33.125C43.0972 35.6597 41.6132 37.8645 39.7395 39.7395C37.8645 41.6145 35.6597 43.0993 33.125 44.1937C30.5902 45.2882 27.8819 45.8347 25 45.8333Z"
+                        fill="#BDBDBD" fill-opacity="0.87" />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="reviews__slider-content">
+                  <a href="" class="social__link">
+                    <svg class="social__link-svg" width="22" height="22" aria-label="icon Instagram">
+                      <use href="./images/icons/icons.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+
+                  <blockquote class="reviews__comment">
+                    <cite class="reviews__comment-name">Ганна Бородуленко</cite>
+                    <p class="reviews__comment-text">
+                      "Я замовив свічку в формі сердечка на День Святого Валентина для моєї дівчини і вона була просто
+                      неймовірна! Запах був дуже приємним і романтичним, а форма сердечка була досконалою для цього
+                      свята. Моя дівчина була дуже задоволена подарунком, і я точно замовлю ще свічок від цього сайту!"
+                    </p>
+                  </blockquote>
+                  <button class="button button--reviews">Купити цей товар</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -660,8 +813,8 @@
     </div>
 
   </footer>
-
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="libs/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 

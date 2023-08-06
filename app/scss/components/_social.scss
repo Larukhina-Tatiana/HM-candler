@@ -18,15 +18,15 @@
     }
   }
 
-  &__link:hover &__link-svg,
-  &__link:focus &__link-svg {
-    padding: 2px;
-    width: 25px;
-    height: 25px;
-    fill: var(--white);
-    background-color: var(--coffee);
-    border-radius: 50%;
-  }
+  // &__link:hover &__link-svg,
+  // &__link:focus &__link-svg {
+  //   padding: 2px;
+  //   width: 25px;
+  //   height: 25px;
+  //   fill: var(--white);
+  //   background-color: var(--coffee);
+  //   border-radius: 50%;
+  // }
 
   @media screen and (width > 999px) {
     justify-content: flex-start;

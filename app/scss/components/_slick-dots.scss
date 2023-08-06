@@ -1,0 +1,35 @@
+.slick-dots {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  button {
+    font-size: 0;
+    background-color: var(--zorba);
+    width: 28px;
+    height: 4px;
+  }
+}
+
+.slick-active >  button {
+    background-color: var(--coffee);
+  }
+
+
+
+@media screen and (width > 767px) {
+  .slick-dots {
+    justify-content: start;
+    left: 147px;
+  }
+}
+
+// @media screen and (width > 1023px) {
+//   .slick-dots {
+//     bottom: 38px;
+//   }
+// }
