@@ -1,4 +1,5 @@
 .button {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,6 +61,12 @@
       font-size: .75rem;
       line-height: calc(13/12);
     }
+
+    &--reviews {
+      position: absolute;
+      bottom: -30px;
+      right: 0;
+    }
   }
 
   @media screen and (width > 767px) {
@@ -74,7 +81,8 @@
 
     &--hero,
     &--products,
-    &--courses {
+    &--courses,
+    &--reviews {
       font-size: .875rem;
       line-height: calc(16/14);
     }
@@ -92,6 +100,11 @@
     &--courses {
       width: 129px;
       height: 42px;
+    }
+
+    &--reviews {
+      width: 216px;
+      height: 56px;
     }
 
   }
