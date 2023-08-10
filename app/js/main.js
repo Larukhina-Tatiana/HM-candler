@@ -24,12 +24,37 @@ $(".nav__burger-btn").on("click", function () {
 // });
 // });
 
-const swiper = new Swiper(".reviews__slider", {
+const swiperOne = new Swiper(".reviews__slider", {
   loop: true,
   // effect: "coverflow",
   // effect: 'fade',
   pagination: {
     el: ".swiper-pagination",
+  },
+//   autoplay: {
+//     delay: 4000,
+//     disableOnInteraction: true
+//   }
+});
+
+const swiperTvo = new Swiper(".certificates__slider", {
+  // loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1000: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
   },
 //   autoplay: {
 //     delay: 4000,

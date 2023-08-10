@@ -1,6 +1,5 @@
 .reviews {
   padding-top: 50px;
-  padding-bottom: 109px;
 
   & .title-h2 {
     color: var(--black);
@@ -10,7 +9,7 @@
   &__slider {
     overflow: hidden;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 70px;
   }
 
   &__slider-item {
@@ -120,7 +119,7 @@
 
     &__slider {
       width: 698px;
-      padding-bottom: 40px;
+      padding-bottom: 107px;
 
       &-item {
         padding: 0 0 0 38px;
@@ -139,7 +138,6 @@
 
     &__video {
       width: 380px;
-
 
       &-img {
         width: 380px;
@@ -200,6 +198,3 @@
   }
 }
 
-.reviews__slider .swiper-pagination {
-  bottom: 0px;
-}

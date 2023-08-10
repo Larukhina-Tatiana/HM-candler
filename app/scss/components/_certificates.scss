@@ -1,0 +1,21 @@
+.certificates {
+
+  &__slider {
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 70px;
+  }
+  
+  & img {
+    margin: 0 auto;
+    width: 200px;
+    height: 127px;
+    object-fit: cover;
+  }
+
+  @media screen and (width > 999px) {
+    &__slider {
+    padding-bottom: 107px;
+    }
+  }
+}

@@ -88,13 +88,16 @@
     }
 
     &__list {
+      min-width: 448px;
       padding-left: 8px;
-      gap: 30px 19px;
+      gap: 30px 14px;
     }
   }
 
+
   @media screen and (width > 999px) {
     &__list {
+      min-width: 662px;
       padding-left: 0px;
       gap: 30px 20px;
     }
@@ -121,7 +124,8 @@
 
   @media screen and (width > 1179px) {
     &__list {
-      padding-left: 40px;
+      width: 770px;
+            padding-left: 40px;
       gap: 78px 75px;
     }
 

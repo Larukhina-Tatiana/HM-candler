@@ -82,6 +82,10 @@
   }
 
   @media screen and (width > 767px) {
+
+    // &__list {
+    //   width: 428px;
+    // }
     &__text {
       margin-bottom: 0;
     }
@@ -123,7 +127,7 @@
 
   @media screen and (width > 1179px) {
     &__list {
-      padding-left: 49px;
+      padding-left: 16px;
       gap: 50px 93px;
     }
 

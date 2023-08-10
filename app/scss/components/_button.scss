@@ -26,7 +26,6 @@
     margin: 0 auto;
     width: 78px;
     height: 30px;
-    padding: 3px;
     font-size: .5rem;
     line-height: calc(9/8);
   }
@@ -43,6 +42,13 @@
     margin: 0 auto;
     width: 124px;
     height: 39px;
+    font-size: .5rem;
+    line-height: calc(9/8);
+  }
+
+  &--promotion {
+    width: 78px;
+    height: 32px;
     font-size: .5rem;
     line-height: calc(9/8);
   }
@@ -67,6 +73,7 @@
       bottom: -30px;
       right: 0;
     }
+
   }
 
   @media screen and (width > 767px) {
@@ -75,6 +82,13 @@
       width: 120px;
       height: 45px;
     }
+
+    &--promotion {
+      width: 125px;
+      height: 40px;
+      font-size: .75rem;
+      line-height: calc(13/12);
+    }
   }
 
   @media screen and (width > 999px) {
@@ -82,7 +96,8 @@
     &--hero,
     &--products,
     &--courses,
-    &--reviews {
+    &--reviews
+    &--promotion {
       font-size: .875rem;
       line-height: calc(16/14);
     }
@@ -105,7 +120,16 @@
     &--reviews {
       width: 216px;
       height: 56px;
+      font-size: .875rem;
+      line-height: calc(16/14);
+      bottom: 0;
     }
 
+    &--promotion {
+      width: 170px;
+      height: 50px;
+      font-size: .875rem;
+      line-height: calc(16/14);
+    }
   }
 }
