@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HM Candler</title>
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="libs/slick/slick.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" > -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" >
   <link rel="stylesheet" type="text/css" href="./css/style.min.css">
 </head>
 
@@ -791,6 +791,47 @@
         </div>
       </div>
     </section>
+    <section class="subscription">
+      <div class="container subscription__inner section__inner">
+        <div class="subscription__content">
+          <h2 class="title-h2">Підпишись на наші акції</h2>
+          <form class="subscription__form" name="subscription-mail" novalidate>
+            <label class="subscription__form-label" for="user_name"></label>
+            <input class="subscription__form-input" type="text" name="name" id="user_name" placeholder="Імя" required >
+            
+            <label class="subscription__form-label" for="user_email"></label>
+            <input class="subscription__form-input" type="email" name="email" id="user_email" placeholder="E-mail" required >
+            <button class="button button--send" type="submit">Підписатись</button>
+          </form>
+        </div>
+        <picture>
+          <source srcset="
+                ./images/subscription-1180@1x.webp 448w,
+                ./images/subscription-1180@2x.webp 896w" type="image/webp" media="(min-width: 1180px) "
+                sizes="(min-width: 1180px) 448px, (min-width: 1000px) 335px, (min-width: 768px) 187px">
+            <source srcset="
+                ./images/subscription-1180@1x.jpg 448w,
+                ./images/subscription-1180@2x.jpg 896w" media="(min-width: 1180px)"
+            sizes="(min-width: 1180px) 448px">
+            <source srcset="
+                ./images/subscription-1000@1x.webp 335w,
+                ./images/subscription-1000@2x.webp 670w" type="image/webp" media="(min-width: 1000px)"
+            sizes="(min-width: 1000px) 335px">
+            <source srcset="
+            ./images/subscription-1000@1x.jpg 335w,
+            ./images/subscription-1000@2x.jpg 670w" media="(min-width: 1000px)"
+        sizes="(min-width: 1000px) 335px">
+          <source srcset="
+                ./images/subscription-768@1x.webp 187w,
+                ./images/subscription-768@2x.webp 374w" type="image/webp" media="(min-width: 768px)"
+            sizes="(min-width: 768px) 187px">
+          <img class="subscription__img" srcset="
+          ./images/subscription-768@1x.jpg 187w,
+          ./images/subscription-768@2x.jpg 374w
+          " src="./images/subscription-768@1x.jpg" alt="images" sizes="(min-width: 768px) 187px">
+        </picture>
+      </div>
+    </section>
 
 
 
@@ -862,11 +903,9 @@
 
       </div>
     </div>
-
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-  <script src="libs/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
