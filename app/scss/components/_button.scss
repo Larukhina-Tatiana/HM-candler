@@ -104,6 +104,10 @@
       font-size: .875rem;
       line-height: calc(16/14);
     }
+
+    &--reviews {
+      right: 10px;
+    }
   }
 
   @media screen and (width > 999px) {
