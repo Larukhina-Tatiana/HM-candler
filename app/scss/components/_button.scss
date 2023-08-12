@@ -79,7 +79,7 @@
     &--reviews {
       position: absolute;
       bottom: -30px;
-      right: 0;
+      right: 10px;
     }
 
   }
@@ -105,9 +105,6 @@
       line-height: calc(16/14);
     }
 
-    &--reviews {
-      right: 10px;
-    }
   }
 
   @media screen and (width > 999px) {
