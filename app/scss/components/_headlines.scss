@@ -49,6 +49,7 @@
   line-height: calc(12/10);
   color: var(--black);
   @extend %YesevaOne-400;
+  min-height: 45px;
 
 
   @media screen and (width > 999px) {
